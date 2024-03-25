@@ -2,4 +2,61 @@
 //container
 //-----------------------
 
+div.containerOeuvreC{
+    margin: 64px;
+    position: relative;
+}
 
+//-----------------------
+//oeuvres
+//-----------------------
+
+div.containerOeuvreC{
+    
+    & div.imagesOeuvreC{
+        & img{
+            width: 20%;
+        }
+    }
+}
+
+//-----------------------
+//oeuvres titres
+//-----------------------
+
+div.containerOeuvreC{
+    
+
+    & div.nomOeuvreC{
+        position: absolute;
+        left: 9%;
+        top: 30%;
+
+        & h2{
+            color: white;
+            font-size: 96px;
+            transform: rotate(90deg);
+        }
+        
+        
+    }
+}
+
+//-----------------------
+//oeuvres backgrounds
+//-----------------------
+
+div.containerOeuvreC{
+    
+    & div.backgroundOeuvreC{
+        position: absolute;
+        top:-16px;
+        left: 5%;
+
+        width: 25%;
+        height: 90%;
+        
+        background-color: gray;
+        z-index: -10;
+    }
+}
