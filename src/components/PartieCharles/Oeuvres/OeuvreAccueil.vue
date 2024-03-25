@@ -7,6 +7,7 @@
         <div class="imagesOeuvreC">
             <img src="../../../assets/images/placeholder/placeholder_image_verticale.png" alt="oeuvre">
         </div>
+        <div class="backgroundOeuvreC"></div>
   </div>
 </template>
 
