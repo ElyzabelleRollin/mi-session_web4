@@ -1,3 +1,10 @@
+div.structure{ 
+    border: 2px red solid;
+    & div.interface{
+        border: 2px lightgreen solid;
+    }
+}
+
 //-----------------------
 //container
 //-----------------------
@@ -5,6 +12,7 @@
 div.containerOeuvreC{
     margin: 64px;
     position: relative;
+    
 }
 
 //-----------------------
@@ -15,7 +23,7 @@ div.containerOeuvreC{
     
     & div.imagesOeuvreC{
         & img{
-            width: 20%;
+            height: 328px;
         }
     }
 }
@@ -29,12 +37,13 @@ div.containerOeuvreC{
 
     & div.nomOeuvreC{
         position: absolute;
-        left: 9%;
-        top: 30%;
-
+        left: -8px;  
+        top: 184px;
+        
         & h2{
+            width:400px;
             color: white;
-            font-size: 96px;
+            font-size: 32px;
             transform: rotate(90deg);
         }
         
@@ -51,10 +60,10 @@ div.containerOeuvreC{
     & div.backgroundOeuvreC{
         position: absolute;
         top:-16px;
-        left: 5%;
+        left: 10%;
 
-        width: 25%;
-        height: 90%;
+        width: 200px;
+        height: 100%;
         
         background-color: gray;
         z-index: -10;

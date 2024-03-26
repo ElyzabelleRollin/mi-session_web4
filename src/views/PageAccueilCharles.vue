@@ -5,7 +5,7 @@ Charles Corey
 
 <script setup>
 import OeuvreAcceuil from "@/components/PartieCharles/Oeuvres/OeuvreAccueil.vue";
-import OeuvrePage from "@/components/PartieCharles/Oeuvres/OeuvrePage.vue";
+/*import OeuvrePage from "@/components/PartieCharles/Oeuvres/OeuvrePage.vue";*/
 </script>
 
 <template>
@@ -17,7 +17,9 @@ import OeuvrePage from "@/components/PartieCharles/Oeuvres/OeuvrePage.vue";
       <OeuvreAcceuil/>
       <OeuvreAcceuil/>
 
-      <OeuvrePage/>
+     
+
+      <!--<OeuvrePage/>-->
     </main>
   </div>
 </template>
