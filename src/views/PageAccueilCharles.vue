@@ -11,12 +11,16 @@ import OeuvreAcceuil from "@/components/PartieCharles/Oeuvres/OeuvreAccueil.vue"
 <template>
   <div class="interface">
     <main>
-      <OeuvreAcceuil/>
-      <OeuvreAcceuil/>
-      <OeuvreAcceuil/>
-      <OeuvreAcceuil/>
-      <OeuvreAcceuil/>
+      <div class="expositionC">
+        
+        <OeuvreAcceuil/>
+        <OeuvreAcceuil/>
+        <OeuvreAcceuil/>
+        <OeuvreAcceuil/>
+        <OeuvreAcceuil/>
 
+      </div>
+      
      
 
       <!--<OeuvrePage/>-->

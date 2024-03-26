@@ -6,13 +6,22 @@ div.structure{
 }
 
 //-----------------------
+//page
+//-----------------------
+div.expositionC{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+//-----------------------
 //container
 //-----------------------
 
 div.containerOeuvreC{
-    margin: 64px;
+    margin: 32px;
     position: relative;
-    
+
 }
 
 //-----------------------
