@@ -12,6 +12,8 @@ div.expositionC{
     display: flex;
     flex-direction: column;
     align-items: center;
+
+    margin-right: 16px;
 }
 
 //-----------------------
@@ -45,15 +47,19 @@ div.containerOeuvreC{
     
 
     & div.nomOeuvreC{
+
+        width: 300px;
+
         position: absolute;
-        left: -8px;  
-        top: 184px;
+        left: 36px;  
+        top: 132px;
+        
+        transform: rotate(90deg);
         
         & h2{
-            width:400px;
             color: white;
             font-size: 32px;
-            transform: rotate(90deg);
+            
         }
         
         
@@ -77,4 +83,47 @@ div.containerOeuvreC{
         background-color: gray;
         z-index: -10;
     }
+}
+
+
+
+//-----------------------------------------------
+//Oeuvres precise
+//-----------------------------------------------
+div.containerOeuvrePreciseC{
+    border: 2px lightblue solid;
+
+    @include setFlex(column, center, center)
+    
+}
+
+
+//-----------------------
+//oeuvres
+//-----------------------
+
+div.containerOeuvrePreciseC{
+    
+    & div.imagesOeuvrePreciseC{
+        & img{
+            height: 180px;
+        }
+    }
+}
+
+//-----------------------
+//description
+//-----------------------
+
+div.containerOeuvrePreciseC{
+
+    & div.descriptionOeuvrePreciseC{
+
+        margin: 32px;
+
+        & p.desC{
+            font-size: 16px;
+        }
+    }
+
 }
