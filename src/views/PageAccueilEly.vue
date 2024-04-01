@@ -1,7 +1,13 @@
-<script setup></script>
+<script setup>
+  import intro from "@/components/ER/PageAccueil/SectionIntro.vue"
+  import imgHorizontale from "@/components/ER/PageAccueil/FicheImageHorizontale.vue"
+</script>
 <template>
   <div class="interface">
-    <main></main>
+    <main>
+      <intro/>
+      <imgHorizontale/>
+    </main>
   </div>
 </template>
 
