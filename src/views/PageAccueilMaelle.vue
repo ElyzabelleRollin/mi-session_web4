@@ -1,7 +1,12 @@
-<script setup></script>
+<script setup>
+  import AffichageItems from '@/components/AffichageItemsMaelle/AffichageItems.vue';
+
+</script>
 <template>
   <div class="interface">
-    <main></main>
+    <main>
+      <AffichageItems/>
+    </main>
   </div>
 </template>
 
