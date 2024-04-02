@@ -18,12 +18,13 @@
 
     onBeforeMount(() => {
         data.id = routeId;
-        console.log(data.id);
+        // console.log(data.id);
+        
         axios.get(API + TYPE + data.id + '?' + KEY )
             .then(response => {
                 data.detailItem = response.data;
-                console.log(data.detailItem);
-                
+                // console.log(data.detailItem);
+
                 if(data.detailItem.images.length === 0){
                     data.itemImg = '/src/assets/img/pasdimage.jpg'
                 }else{
@@ -38,13 +39,39 @@
 <template>
   <div class="interface">
     <main>
-      <div class="img-maelle">
+      <h2>Arsenal du temps</h2>
+
+      <p class="nom-oeuvre" v-text="data.detailItem.title"></p>
+
+      <div class="info-type-maelle">
+        <p class="type-oeuvre" v-text="data.detailItem.worktypes[0].worktype"></p>
+      </div>
+
+      <div class="info-annee-maelle">
+        <p class="annee-oeuvre" v-text="data.detailItem.dated"></p>
+      </div>
+
+      <div class="info-periode-maelle">
+        <p class="periode-oeuvre" v-text="data.detailItem.period"></p>
+      </div>
+
+      <div class="img-detail-maelle">
         <img :src="data.itemImg" :alt="data.detailItem.title">
       </div>
-      <div class="info-maelle">
-        <p class="item-maelle" v-text="data.detailItem.title"></p>
-        <RouterLink :to="{name: 'pageaccueilmaelle'}">Retourner &gt;</RouterLink>
+
+      <div class="info-dimension-maelle">
+        <p class="dimension-oeuvre" v-text="data.detailItem.dimensions"></p>
       </div>
+      
+      <div class="info-description-maelle">
+        <p class="description-oeuvre" v-text="data.detailItem.description"></p>
+      </div>
+
+      <div class="info-permission-maelle">
+        <p class="permission-oeuvre" v-text="data.detailItem.permission"></p>
+      </div>
+
+        <RouterLink :to="{name: 'pageaccueilmaelle'}">Retourner &gt;</RouterLink>
     </main>
   </div>
 </template>
