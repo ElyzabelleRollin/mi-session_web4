@@ -1,0 +1,25 @@
+// Style de structure générale page Accueil Maelle
+//----------------------------------------------------
+
+// - - - - - - - - - - - - - - - - - - - - - - - - - - -
+// Structure
+// - - - - - - - - - - - - - - - - - - - - - - - - - - -
+div.structure{
+    @include setFlex(column, start, center);
+    @include resetBox;
+    position: relative;
+}
+
+div.interface-maelle{
+    @extend .container-xxl;
+    width: 100%;
+    min-height: 100vh;
+    @include resetBox;
+}
+
+main{
+    @extend .row;
+    @include resetBox;
+    @include setFlex(column, start, center);
+    width: 100%;
+}

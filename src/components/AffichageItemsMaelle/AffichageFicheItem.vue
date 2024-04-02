@@ -14,25 +14,25 @@
   });
 
   onMounted(() => {
-      console.log(props.itemInfo)
+    //   console.log(props.itemInfo)
 
       if(props.itemInfo.images.length === 0){
             data.itemImg = '/src/assets/img/pasdimage.jpg'
-            console.log("pas d'image!!!!!!!!!")
+            // console.log("pas d'image!!!!!!!!!")
       }else{
-            console.log("image ok");
+            // console.log("image ok");
             data.itemImg = props.itemInfo.images[0].baseimageurl;
       }
   });
 </script>
 
 <template>
-    <div class="fiche-produits">
-        <div class="img">
+    <div class="fiche-items-maelle">
+        <div class="img-maelle">
             <img :src="data.itemImg" :alt="props.itemInfo.title">
         </div>
-        <div class="info">
-            <p class="item" v-text="props.itemInfo.title"></p>
+        <div class="info-maelle">
+            <p class="item-maelle" v-text="props.itemInfo.title"></p>
             <RouterLink :to="{name: 'pageobjetmaelle', params: {id: props.itemInfo.id}}">En savoir plus &gt;</RouterLink>
         </div>
     </div>
