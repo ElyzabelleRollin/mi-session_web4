@@ -16,11 +16,12 @@
   onMounted(() => {
       console.log(props.itemInfo)
 
-      if(props.itemInfo.nbPhotos === 0){
-          data.itemImg = '/src/assets/img/pasdimage.jpg'
-          console.log("pas d'image!!!!!!!!!")
+      if(props.itemInfo.images.length === 0){
+            data.itemImg = '/src/assets/img/pasdimage.jpg'
+            console.log("pas d'image!!!!!!!!!")
       }else{
-          data.itemImg = props.itemInfo.image.url;
+            console.log("image ok");
+            data.itemImg = props.itemInfo.images[0].baseimageurl;
       }
   });
 </script>
@@ -28,10 +29,10 @@
 <template>
     <div class="fiche-produits">
         <div class="img">
-            <img :src="data.itemImg" :alt="props.itemInfo.titre">
+            <img :src="data.itemImg" :alt="props.itemInfo.title">
         </div>
         <div class="info">
-            <p class="item" v-text="props.itemInfo.titre"></p>
+            <p class="item" v-text="props.itemInfo.title"></p>
             <RouterLink :to="{name: 'pageobjetmaelle', params: {id: props.itemInfo.id}}">En savoir plus &gt;</RouterLink>
         </div>
     </div>

@@ -14,8 +14,8 @@
     onBeforeMount(() => {
         axios.get(API + TYPE + KEY)
             .then(response => {
-                data.items = response.data;
-                console.log(data.items);
+                data.items = response.data.records;
+                console.log("hein",data.items);
             })
             .catch(error => {
                 console.error("Erreur à la récupération : ", error);

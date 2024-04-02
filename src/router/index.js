@@ -44,7 +44,7 @@ const router = createRouter({
       component: () => import("@/views/PageObjetGab.vue"),
     },
     {
-      path: "/pageobjetmaelle",
+      path: "/pageobjetmaelle/:id",
       name: "pageobjetmaelle",
       component: () => import("@/views/PageObjetMaelle.vue"),
     },
