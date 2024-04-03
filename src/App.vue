@@ -7,7 +7,7 @@ import FooterApp from "@/components/commun/FooterApp/FooterApp.vue";
 <template>
   <div class="structure">
     <HeaderApp />
-    <h1>Structure de l'application</h1>
+    
     <RouterView />
     <FooterApp />
   </div>

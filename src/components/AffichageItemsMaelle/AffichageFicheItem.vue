@@ -14,26 +14,25 @@
   });
 
   onMounted(() => {
-    //   console.log(props.itemInfo)
 
       if(props.itemInfo.images.length === 0){
             data.itemImg = '/src/assets/img/pasdimage.jpg'
-            // console.log("pas d'image!!!!!!!!!")
       }else{
-            // console.log("image ok");
             data.itemImg = props.itemInfo.images[0].baseimageurl;
       }
   });
 </script>
 
 <template>
-    <div class="fiche-items-maelle">
-        <div class="img-maelle">
-            <img :src="data.itemImg" :alt="props.itemInfo.title">
-        </div>
-        <div class="info-maelle">
-            <p class="item-maelle" v-text="props.itemInfo.title"></p>
-            <RouterLink :to="{name: 'pageobjetmaelle', params: {id: props.itemInfo.id}}">En savoir plus &gt;</RouterLink>
+    <div class="interface">
+        <div class="fiche-items-maelle">
+            <div class="img-maelle">
+                <img :src="data.itemImg" :alt="props.itemInfo.title">
+            </div>
+            <div class="info-maelle">
+                <p class="item-maelle" v-text="props.itemInfo.title"></p>
+                <RouterLink :to="{name: 'pageobjetmaelle', params: {id: props.itemInfo.id}}" class="link">En savoir plus &gt;</RouterLink>
+            </div>
         </div>
     </div>
 </template>

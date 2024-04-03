@@ -4,3 +4,13 @@
 // - - - - - - - - - - - - - - - - - - - - - - - - - - -
 // Structure
 // - - - - - - - - - - - - - - - - - - - - - - - - - - -
+div.interface-maelle{
+    width: 100%;
+    & h2{
+        @include resetBox;
+        padding: 1rem 0;
+        font-size: 2rem;
+        font-weight: bold;
+        text-align: center;
+    }
+}

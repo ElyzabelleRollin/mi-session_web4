@@ -18,12 +18,10 @@
 
     onBeforeMount(() => {
         data.id = routeId;
-        // console.log(data.id);
         
         axios.get(API + TYPE + data.id + '?' + KEY )
             .then(response => {
                 data.detailItem = response.data;
-                 console.log(data.detailItem);
 
                 if(data.detailItem.images.length === 0){
                     data.itemImg = '/src/assets/img/pasdimage.jpg'

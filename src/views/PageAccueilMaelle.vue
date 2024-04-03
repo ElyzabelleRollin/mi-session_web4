@@ -3,17 +3,17 @@
 
 </script>
 <template>
-  <div class="interface">
+  <div class="interface-maelle">
     <main>
-      <div>
-            <h2>Arsenal du temps</h2>
-        </div>
-        <div class="ligne-temps">
+      <div class="titre-maelle">
+            <h2>Arsenal du Temps</h2>
+      </div>
+      <div class="ligne-temps">
             
-        </div>
-        <div class="liste">
+      </div>
+      <div class="liste">
           <AffichageItems/>
-        </div>
+      </div>
     </main>
   </div>
 </template>
