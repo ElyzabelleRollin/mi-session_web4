@@ -1,0 +1,51 @@
+//------------------------------------------
+//2160879
+//Charles Corey
+//------------------------------------------
+
+
+
+//---------------------------------------------------
+//Footer
+//---------------------------------------------------
+
+//-------------------
+//footer base
+//-------------------
+footer{
+    position: absolute;
+
+    width: 100%;
+
+    padding: 24px;
+    background-color: rgb(71, 71, 71);
+
+    & p{
+        color: #b4b4b4;
+    }
+    & h3{
+       color: #fff; 
+    }
+}
+
+
+
+//-------------------
+//footer logo
+//-------------------
+div.logo{
+    z-index: 16;
+}
+div.logoContainer{
+    position: relative;
+    bottom: -200px;
+    left: -175px;
+
+    width: 460px;
+    height: 460px;
+
+    z-index: 1;
+    rotate: -60deg;
+
+    background-color: rgb(194, 194, 194);
+}
