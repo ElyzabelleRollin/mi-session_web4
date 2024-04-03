@@ -6,11 +6,14 @@
 // - - - - - - - - - - - - - - - - - - - - - - - - - - -
 div.interface-maelle{
     width: 100%;
-    & h2{
-        @include resetBox;
-        padding: 1rem 0;
-        font-size: 2rem;
-        font-weight: bold;
-        text-align: center;
+    & div.titre-maelle{
+        background-color: #f4eeed;
+        & h2{
+            @include resetBox;
+            padding-top: 1rem ;
+            font-size: 2rem;
+            font-weight: bold;
+            text-align: center;
+        }
     }
 }

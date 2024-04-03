@@ -12,13 +12,13 @@ div.liste{
     min-height: 100vh;
      
     & .item01{
-        background-color: #a5a68f;
+        background-color: #f4eeed;
     }
     & .item02{
-        background-color: #f2dbd5;
+        background-color: #a5a68f;
     }
     & .item03{
-        background-color: #d9b2a9;
+        background-color: #faf4e3;
     }
 }
 
@@ -29,15 +29,16 @@ div.liste{
 div.fiche-items-maelle{
     @include setFlex(column, center, center);
     width: 100%;
-    padding: 2rem;
+    padding: 3rem 1.5rem;
     text-align: center;
     & div.img-maelle{
         width: 100%;
         & img{
             @include resetBox;
             object-fit: contain;
+            margin: .5rem auto;
             width: 100%;
-            height: 25vh;
+            height: 30vh;
         }
     }
     & div.info-maelle{
@@ -47,7 +48,7 @@ div.fiche-items-maelle{
             font-size: 1.2rem;
             font-weight: bold;
             text-transform: uppercase;
-            
+            margin : 0.2rem;
         }
         & .link{
             color: #f4eeed;
@@ -58,12 +59,15 @@ div.fiche-items-maelle{
 // - - - - - - - - - - - - - - - - - - - - - - - - - - -
 // Structure affichage link de la deuxieme section
 // - - - - - - - - - - - - - - - - - - - - - - - - - - -
-
 div.liste-items02{
+    @include resetBox;
+}
+div.liste-items01, div.liste-items03{
+    @include resetBox;
     & div.fiche-items-maelle{
         & div.info-maelle{
             & .link{
-                color: #4e4e4e;
+                color: #6E6F5E;
             }
         }
     }
