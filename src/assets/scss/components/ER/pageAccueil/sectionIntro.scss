@@ -1,9 +1,14 @@
+//Style de la section intro
+//-----------------------------------
+//Élyzabelle Rollin
+//1720870
 p{
     text-align: center;
+    @include marginEnfantMobile;
 }
 
 .conteneur-image > .logo{
-    height: 150px;
+    height: 130px;
     margin: 0 auto;
-    display: block;
+    @include marginSectionMobile;
 }

@@ -1,0 +1,16 @@
+//Style générale du composant
+//-------------------------------------------
+//Élyzabelle Rollin
+//1720870
+.conteneur-img-horizontal{
+    // display: block;
+    position: relative;
+    right: 20px;
+
+    & > img{
+        display: block;
+        width: 300px;
+        height: 200px;
+        border-radius: 0 200px 200px 0px;
+    }
+}

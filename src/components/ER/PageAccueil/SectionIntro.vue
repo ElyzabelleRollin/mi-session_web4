@@ -1,4 +1,11 @@
-<script setup></script>
+<!--*************************************************************
+Élyzabelle Rollin
+1720870
+**************************************************************-->
+<script setup>
+
+</script>
+
 <template>
   <div class="xs-6">
     <div class="conteneur-image">
@@ -8,4 +15,6 @@
   </div>
 </template>
 
-<style></style>
+<style>
+
+</style>

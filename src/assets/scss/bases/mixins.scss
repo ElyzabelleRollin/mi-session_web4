@@ -1,3 +1,5 @@
+
+
 @mixin setFlex($direction, $justify, $align){
     display: flex;
     flex-direction: $direction;
@@ -18,4 +20,17 @@
 @mixin resetBox{
     padding : 0;
     margin: 0;
+}
+
+//Style général mobile
+//----------------------------------------------
+//Élyzabelle Rollin
+//1720870
+
+@mixin marginSectionMobile{
+    margin-top: 100px;
+}
+
+@mixin marginEnfantMobile{
+    margin-top: 25px;
 }
