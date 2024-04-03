@@ -1,8 +1,8 @@
 <script setup>
   import { reactive, onBeforeMount, computed } from 'vue';
-  import axios from 'axios'; 
   import {useRoute} from 'vue-router';
   import { RouterLink } from 'vue-router';
+  import axios from 'axios'; 
 
     const route = useRoute();
     const routeId = computed(() => route.params.id)
@@ -23,7 +23,7 @@
         axios.get(API + TYPE + data.id + '?' + KEY )
             .then(response => {
                 data.detailItem = response.data;
-                // console.log(data.detailItem);
+                 console.log(data.detailItem);
 
                 if(data.detailItem.images.length === 0){
                     data.itemImg = '/src/assets/img/pasdimage.jpg'
@@ -41,7 +41,7 @@
     <main>
       <h2>Arsenal du temps</h2>
 
-      <p class="nom-oeuvre" v-text="data.detailItem.title"></p>
+      <p class="nom-oeuvre-maelle" v-text="data.detailItem.title"></p>
 
       <div class="info-type-maelle">
         <p class="type-oeuvre" v-text="data.detailItem.worktypes[0].worktype"></p>
@@ -62,7 +62,7 @@
       <div class="info-dimension-maelle">
         <p class="dimension-oeuvre" v-text="data.detailItem.dimensions"></p>
       </div>
-      
+
       <div class="info-description-maelle">
         <p class="description-oeuvre" v-text="data.detailItem.description"></p>
       </div>
