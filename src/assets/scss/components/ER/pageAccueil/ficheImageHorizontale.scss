@@ -2,15 +2,40 @@
 //-------------------------------------------
 //Élyzabelle Rollin
 //1720870
-.conteneur-img-horizontal{
-    // display: block;
-    position: relative;
-    right: 20px;
+@import '../../../../../../node_modules/bootstrap/scss/bootstrap.scss';
 
-    & > img{
-        display: block;
-        width: 300px;
-        height: 200px;
-        border-radius: 0 200px 200px 0px;
+.conteneur{
+    @extend .col-12;
+    @include marginSectionMobile;
+    
+    
+    & .conteneur-img-horizontal{
+        position: relative;
+        right: 20px;
+        @include marginEnfantMobile;
+        
+        & > img{
+            display: block;
+            width: 95%;
+            height: 200px;
+            border-radius: 0 200px 200px 0px;
+        }
+        .img-right{
+            border-radius: 200px 0  0 200px;
+        }
     }
+} 
+
+.container-right{
+    position: relative;
+    left: 55px;
+
 }
+    
+.this{
+    width: 100%;
+    @include debug;
+}
+
+
+    

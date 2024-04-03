@@ -7,11 +7,11 @@
 </script>
 
 <template>
-  <div class="xs-6">
+  <div>
     <div class="conteneur-image">
         <img src="../../../assets/img/Logo1.2_B.svg" alt="Logo Floralis" class="logo">
     </div>
-    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla condimentum risus id mi consequat, quis eleifend nunc efficitur. Vivamus sagittis risus non purus tristique, ut pulvinar elit accumsan. </p>
+    <p class="centrer">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla condimentum risus id mi consequat, quis eleifend nunc efficitur. Vivamus sagittis risus non purus tristique, ut pulvinar elit accumsan. </p>
   </div>
 </template>
 
