@@ -31,7 +31,7 @@
             </div>
             <div class="info-maelle">
                 <p class="item-maelle" v-text="props.itemInfo.title"></p>
-                <RouterLink :to="{name: 'pageobjetmaelle', params: {id: props.itemInfo.id}}" class="link">En savoir plus &gt;</RouterLink>
+                <RouterLink :to="{name: 'pageobjetmaelle', params: {id: props.itemInfo.id}}" class="link">Pour en découvrir plus &gt;</RouterLink>
             </div>
         </div>
     </div>

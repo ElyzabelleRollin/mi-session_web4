@@ -28,6 +28,7 @@
                 }else{
                     data.itemImg = data.detailItem.images[0].baseimageurl;
                 }
+                console.log(data.detailItem);
             })
             .catch(error => {
                 console.error("Erreur à la sélection : ", error);
@@ -35,22 +36,28 @@
     });
 </script>
 <template>
-  <div class="interface">
-    <main>
+  <div class="interface-maelle">
+    <main class="detail-maelle">
       <h2>Arsenal du temps</h2>
 
       <p class="nom-oeuvre-maelle" v-text="data.detailItem.title"></p>
 
       <div class="info-type-maelle">
-        <p class="type-oeuvre" v-text="data.detailItem.worktypes[0].worktype"></p>
+        <div class="contour">
+          <p class="type-oeuvre" v-text="data.detailItem.worktypes[0].worktype"></p>
+        </div>
       </div>
 
       <div class="info-annee-maelle">
-        <p class="annee-oeuvre" v-text="data.detailItem.dated"></p>
+        <div class="contour">
+          <p class="annee-oeuvre" v-text="data.detailItem.dated"></p>
+        </div>
       </div>
 
       <div class="info-periode-maelle">
-        <p class="periode-oeuvre" v-text="data.detailItem.period"></p>
+        <div class="contour">
+          <p class="periode-oeuvre" v-text="data.detailItem.period"></p>
+        </div>
       </div>
 
       <div class="img-detail-maelle">
@@ -62,14 +69,16 @@
       </div>
 
       <div class="info-description-maelle">
-        <p class="description-oeuvre" v-text="data.detailItem.description"></p>
+        <p class="description">Description</p>
+        <p class="description-oeuvre" v-if="data.detailItem.description" >{{ data.detailItem.description }}</p>
+        <p class="description-oeuvre" v-else >Aucune description</p>
       </div>
 
       <div class="info-permission-maelle">
         <p class="permission-oeuvre" v-text="data.detailItem.permission"></p>
       </div>
 
-        <RouterLink :to="{name: 'pageaccueilmaelle'}">Retourner &gt;</RouterLink>
+        <RouterLink :to="{name: 'pageaccueilmaelle'}" class="link">Retourner</RouterLink>
     </main>
   </div>
 </template>

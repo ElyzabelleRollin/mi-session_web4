@@ -52,6 +52,11 @@ div.fiche-items-maelle{
         }
         & .link{
             color: #f4eeed;
+            &:hover {
+                font-weight: 500;
+                font-style: italic;
+                color: #eee;
+            }
         }
     }
 }
@@ -68,6 +73,11 @@ div.liste-items01, div.liste-items03{
         & div.info-maelle{
             & .link{
                 color: #6E6F5E;
+                &:hover {
+                    font-weight: 500;
+                    font-style: italic;
+                    color: #222;
+                }
             }
         }
     }

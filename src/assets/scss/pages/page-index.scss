@@ -1,4 +1,4 @@
-// Style de structure générale page Accueil Maelle
+// Style de structure générale 
 //----------------------------------------------------
 
 // - - - - - - - - - - - - - - - - - - - - - - - - - - -
@@ -9,17 +9,25 @@ div.structure{
     @include resetBox;
     position: relative;
 }
-
-div.interface-maelle{
-    @extend .container;
-    width: 100%;
-    min-height: 100vh;
-    @include resetBox;
-}
-
+// - - - - - - - - - - - - - - - - - - - - - - - - - - -
+// Structure Main
+// - - - - - - - - - - - - - - - - - - - - - - - - - - -
 main{
     @extend .row;
     @include resetBox;
     @include setFlex(column, start, center);
     width: 100%;
+}
+// - - - - - - - - - - - - - - - - - - - - - - - - - - -
+// Structure générale interface page Accueil Maelle
+// - - - - - - - - - - - - - - - - - - - - - - - - - - -
+div.interface-maelle{
+    @extend .container;
+    @include resetBox;
+    width: 100%;
+    min-height: 100vh;
+
+    @include breakpoint-min(576){
+        width: 80%;
+    }
 }

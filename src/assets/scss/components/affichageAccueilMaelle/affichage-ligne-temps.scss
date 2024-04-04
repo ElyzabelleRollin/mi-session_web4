@@ -5,12 +5,14 @@
 // Structure ligne du temps
 // - - - - - - - - - - - - - - - - - - - - - - - - - - -
 div.ligne-temps{
+    display: none;
     position: absolute;
+    z-index: 2;
     top: 0;
     left: 1%;
-    padding: 1rem 1rem 100rem ;
+    padding: 1rem .5rem 100rem ;
     width: 1vh;
-    height: 400vh;
+    height:200vh;
     border-radius: 10vh;
     text-align: center;
     background-color: black;
