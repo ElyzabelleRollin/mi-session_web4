@@ -1,0 +1,14 @@
+
+
+.test{
+    @include marginSectionMobile;
+    width: 100%;
+    height: 400px;
+    overflow: hidden;
+}
+
+    .img-pleine{
+        display: block; 
+        object-fit: contain;   
+        height: 360px;
+    }

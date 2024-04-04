@@ -2,19 +2,17 @@
 Élyzabelle Rollin
 1720870
 **************************************************************-->
-<script setup>
-
-</script>
+<script setup></script>
 
 <template>
-  <div>
+  <div class="conteneur">
     <div class="conteneur-image">
         <img src="../../../assets/img/Logo1.2_B.svg" alt="Logo Floralis" class="logo">
     </div>
-    <p class="centrer">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla condimentum risus id mi consequat, quis eleifend nunc efficitur. Vivamus sagittis risus non purus tristique, ut pulvinar elit accumsan. </p>
+    <p class="centrer">
+      Bienvenue à notre exposition virtuelle dédiée à la nature ! Explorez sa beauté, sa vitalité et son importance. Des montagnes aux profondeurs marines, découvrez son rôle essentiel. L'art, l'inspiration, et la nécessité de la préserver vous attendent. Plongez dans cet univers captivant dès maintenant ! 
+    </p>
   </div>
 </template>
 
-<style>
-
-</style>
+<style></style>

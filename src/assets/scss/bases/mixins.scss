@@ -1,4 +1,7 @@
-
+//Style général
+//----------------------------------------------
+//Élyzabelle Rollin
+//1720870
 
 @mixin setFlex($direction, $justify, $align){
     display: flex;
@@ -28,9 +31,29 @@
 //1720870
 
 @mixin marginSectionMobile{
-    margin-top: 100px;
+    margin-top: 150px;
 }
 
 @mixin marginEnfantMobile{
     margin-top: 25px;
 }
+
+@mixin marginSousElementMobile{
+    margin-top: 100px;
+}
+
+@mixin marginMobile{
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+//Style général tablette
+//----------------------------------------------
+//Élyzabelle Rollin
+//1720870
+
+
+//Style général desktop
+//----------------------------------------------
+//Élyzabelle Rollin
+//1720870
