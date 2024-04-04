@@ -37,7 +37,15 @@ div.liste-items01, div.liste-items02, div.liste-items03{
         overflow-x: auto;
         -webkit-overflow-scrolling: touch;
         .e-resize {cursor: e-resize;}
-        
+    }
+    @include breakpoint-min(992){
+        @include setFlex(row, space-between, center);
+        gap: 0;
+        flex-wrap: nowrap;
+        display: flex;
+        overflow-x: auto;
+        -webkit-overflow-scrolling: touch;
+        .e-resize {cursor: e-resize;}
     }
 }
 
@@ -82,7 +90,22 @@ div.fiche-items-maelle{
     @include breakpoint-min(768){
         width: 350px;
         padding: 3rem 1.5rem;
+        margin: 3rem 2rem;
         flex-shrink: 0;
+    }
+    @include breakpoint-min(992){
+        width: 550px;
+        margin: 10rem 3rem;
+        flex-shrink: 0;
+
+        & img{
+            height: 50vh;
+        }
+        & p{
+            padding-top: 1.5rem;
+            font-size: 2.5rem;
+            margin : 1rem;
+        }
     }
 }
 
