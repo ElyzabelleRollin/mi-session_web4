@@ -31,7 +31,13 @@ div.liste-items01, div.liste-items02, div.liste-items03{
     @include setFlex(column, center, center);
     @include breakpoint-min(768){
         @include setFlex(row, space-between, center);
+        gap: 2rem;
         flex-wrap: nowrap;
+        display: flex;
+        overflow-x: auto;
+        -webkit-overflow-scrolling: touch;
+        .e-resize {cursor: e-resize;}
+        
     }
 }
 
@@ -74,8 +80,9 @@ div.fiche-items-maelle{
     }
 
     @include breakpoint-min(768){
-        width: 75%;
+        width: 350px;
         padding: 3rem 1.5rem;
+        flex-shrink: 0;
     }
 }
 
