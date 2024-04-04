@@ -28,7 +28,7 @@
 
 <template>
   <div class="conteneur">
-    <div v-for="(art, index) in data.oeuvres" :key="index"  >
+    <div v-for="(art, index) in data.oeuvres" :key="index" class="fiche">
       <div class="conteneur-img-horizontal" :class="{ 'conteneur-droite': index === 1 }">
           <img :src = 'art.primaryimageurl' alt="" 
           :class="{ 'img-droite': index === 1 }">
