@@ -22,4 +22,11 @@ div.interface-maelle{
             text-align: center;
         }
     }
+
+    @include breakpoint-min(576px){
+       div.interface-maelle{
+            width: 80%;
+            
+       }
+    }
 }

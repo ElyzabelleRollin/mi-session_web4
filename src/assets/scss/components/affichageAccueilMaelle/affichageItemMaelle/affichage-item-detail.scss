@@ -49,13 +49,37 @@ main.detail-maelle {
         padding-top: 1rem;
     }
     & .info-description-maelle {
+        position: relative;
+        overflow: hidden;
+        padding: 0 0rem 1rem ;
+        color: #000;
+        
         & p.description{
-            padding-top: 1rem;
-            margin-bottom: .5rem;
-            font-size: 1.2rem;
+            position: absolute;
+            top: 3%;
+            left: 20%;
+            padding: 1rem 3rem 3rem;
+            font-size: 1.3rem;
             font-weight: 500;
+            background-color: #D7D9BB;
         }
-        padding: 0 1rem 1rem ;
+        & p.description-oeuvre{
+            width: 100%;
+            margin-top: 3rem;
+            padding: 4rem 1rem 2rem;
+            background-color: #a5a68f;
+            clip-path: polygon(
+                0 15%,
+                100% 0,
+                0% 0,
+                100% 0%,
+                100% 90%,
+                100% 100%,
+                0% 100%,
+                0% 90%,
+                0% 10%
+            );
+        }
     }
     & .link {
         padding-bottom: 1rem;

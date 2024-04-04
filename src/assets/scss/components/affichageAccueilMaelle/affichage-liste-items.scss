@@ -11,20 +11,33 @@ div.liste{
     width: 100%;
     min-height: 100vh;
      
-    & .item01{
+    & .liste-items01{
         background-color: #f4eeed;
     }
-    & .item02{
+    & .liste-items02{
         background-color: #a5a68f;
     }
-    & .item03{
+    & .liste-items03{
         background-color: #faf4e3;
+    }
+    
+    
+}
+// - - - - - - - - - - - - - - - - - - - - - - - - - - -
+// Structure affichage des sections
+// - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+div.liste-items01, div.liste-items02, div.liste-items03{
+    @include setFlex(column, center, center);
+    @include breakpoint-min(768){
+        @include setFlex(row, space-between, center);
+        flex-wrap: nowrap;
     }
 }
 
 
 // - - - - - - - - - - - - - - - - - - - - - - - - - - -
-// Structure affichage des items section 1 et 3
+// Structure affichage des items section 1 à 3
 // - - - - - - - - - - - - - - - - - - - - - - - - - - -
 div.fiche-items-maelle{
     @include setFlex(column, center, center);
@@ -59,7 +72,13 @@ div.fiche-items-maelle{
             }
         }
     }
+
+    @include breakpoint-min(768){
+        width: 75%;
+        padding: 3rem 1.5rem;
+    }
 }
+
 
 // - - - - - - - - - - - - - - - - - - - - - - - - - - -
 // Structure affichage link de la deuxieme section
