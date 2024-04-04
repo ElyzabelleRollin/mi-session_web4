@@ -17,7 +17,6 @@
       for (const oeuvreID of oeuvresID) {
         const response = await axios.get(url + type + oeuvreID + "?" + cleAPI)
         data.value.oeuvres.push(response.data)
-        console.log(data.value.oeuvres)
       }
     } catch (error) {
       console.error(error);

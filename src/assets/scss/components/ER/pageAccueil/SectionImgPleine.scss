@@ -1,14 +1,28 @@
+//Style générale de la section 4
+//-------------------------------------------
+//Élyzabelle Rollin
+//1720870
 
-
-.test{
+//--------------------------------------------
+//Style de la section
+//--------------------------------------------
+.conteneur-section-pleine{
     @include marginSectionMobile;
     width: 100%;
     height: 400px;
     overflow: hidden;
+
+    //--------------------------------------------
+    //Style de l'image
+    //--------------------------------------------
+    & .img-pleine{
+        display: block; 
+        width: 900px;
+        height: 200px;
+        margin: 0 auto;
+        position: relative;
+        right: 150px;
+    }
 }
 
-    .img-pleine{
-        display: block; 
-        object-fit: contain;   
-        height: 360px;
-    }
+

@@ -1,38 +1,35 @@
 <script setup>
-   import {ref, onBeforeMount} from 'vue'
-    import axios from 'axios'
+import { reactive, onBeforeMount} from 'vue'
+import axios from 'axios'
 
-    const data = ref({
-  arts: []
+const data = reactive({
+  oeuvres: []
 })
 
-// const oeuvresID = [360615, 360614, 199108, 306359, 360606, 306403, 311878, 295089, 306319, 360634, 360610, 306366]
-const oeuvresID = 182200
+const oeuvresID = 306275
 const url = 'https://api.harvardartmuseums.org/'
 const type = 'object/'
 const cleAPI = 'apikey=7c4a3a17-da3e-4661-91fe-602f96ff8a28'
 
-onBeforeMount( () => {
-  axios.get(url + type + oeuvresID + "?" + cleAPI)
-  .then(response => {
-    data.value.arts = response.data
-    console.log(data.value.arts)
-    
-  })
-  .catch(error => {
+onBeforeMount(async () => {
+  try {
+    const response = await axios.get(url + type + oeuvresID + "?" + cleAPI)
+    data.oeuvres = response.data
+  } catch (error) {
     console.error(error)
-  })
+  }
 })
+
 </script>
 
 <template>
-  <div class="test">
-    <img :src='data.arts.primaryimageurl' class="img-pleine" alt="">
-    <div>
-        <h3>{{ data.arts.title }}</h3>
-        <!-- <p>{{ data.arts.people[0].name }}</p> -->
+  <div class="conteneur-section-pleine">
+    <div class="conteneur-image">
+        <img v-if="data.oeuvres.title" :src='data.oeuvres.primaryimageurl' class="img-pleine" alt="">
+    </div>
+    <div v-if="data.oeuvres.title">
+        <h3>{{ data.oeuvres.title }}</h3>
+        <p :v-for="oeuvre in data.oeuvres">{{ data.oeuvres.people[0].name }}</p> 
     </div>
   </div>
 </template>
-
-<style></style>

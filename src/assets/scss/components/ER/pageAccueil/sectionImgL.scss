@@ -6,7 +6,7 @@
 //--------------------------------------------
 //Style de la section
 //--------------------------------------------
-.container-L{
+.conteneur{
     @include marginSectionMobile;
 
     //--------------------------------------------
@@ -22,7 +22,7 @@
     //--------------------------------------------
     //Style du conteneur dutexte
     //--------------------------------------------
-    & .texte {
+    & .texte-L {
         @include marginMobile;
         @include marginTopTexte;
         text-align: right;
