@@ -1,16 +1,31 @@
+//Style générale de la section 3
+//-------------------------------------------
+//Élyzabelle Rollin
+//1720870
+
+//--------------------------------------------
+//Style de la section
+//--------------------------------------------
 .container-L{
     @include marginSectionMobile;
-    position: relative;
 
-    .img-L{
-        width: 90%;
-        border-radius: 200px 200px 0 0 ;
-        margin: 0 auto;
+    //--------------------------------------------
+    //Style du sous-conteneur
+    //--------------------------------------------
+    & .img-L{
         position: relative;
-        left: 30%;
+        left: 20%;
+        border-radius: 200px 200px 0 0 ;
+        @extend .col-12;
     }
-    h3, p{
-        text-align: center;   
+
+    //--------------------------------------------
+    //Style du conteneur dutexte
+    //--------------------------------------------
+    & .texte {
+        @include marginMobile;
+        @include marginTopTexte;
+        text-align: right;
     }
 }
 

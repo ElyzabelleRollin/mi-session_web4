@@ -1,4 +1,4 @@
-//Style générale du composant
+//Style générale de la section 2
 //-------------------------------------------
 //Élyzabelle Rollin
 //1720870
@@ -50,7 +50,7 @@
         //--------------------------------------------
         & .texte{
             @include marginMobile;
-            margin-top: 1em;
+            @include marginTopTexte;
         }
     }
 } 
