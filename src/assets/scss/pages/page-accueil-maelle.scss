@@ -6,6 +6,12 @@
 // - - - - - - - - - - - - - - - - - - - - - - - - - - -
 div.interface-maelle{
     width: 100%;
+    & div.accueil{
+        @include setFlex(row, start, center);
+        @include resetBox;
+        width: 100%;
+    }
+
     & div.titre-maelle{
         background-color: #f4eeed;
         & h2{
