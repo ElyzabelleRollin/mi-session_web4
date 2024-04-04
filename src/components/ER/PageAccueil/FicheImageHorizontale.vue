@@ -28,16 +28,16 @@
 </script>
 
 <template>
-  <div>
-  <div class="conteneur" v-for="(art, index) in data.oeuvres" :key="index" :class="{ 'container-right': index === 1 }">
-    <div class="conteneur-img-horizontal">
-        <img :src = 'art.primaryimageurl' alt="" 
-        :class="{ 'img-right': index === 1 }">
-    </div>
-    <div>
-      <h3>{{ art.title }}</h3> 
-      <p>{{ art.people[0].name }}</p> 
-    </div>
+  <div class="conteneur">
+    <div v-for="(art, index) in data.oeuvres" :key="index"  >
+      <div class="conteneur-img-horizontal" :class="{ 'conteneur-droite': index === 1 }">
+          <img :src = 'art.primaryimageurl' alt="" 
+          :class="{ 'img-droite': index === 1 }">
+      </div>
+      <div class="texte">
+        <h3>{{ art.title }}</h3> 
+        <p>{{ art.people[0].name }}</p> 
+      </div>
     </div>
   </div>
 </template>

@@ -3,38 +3,61 @@
 //Élyzabelle Rollin
 //1720870
 
+//--------------------------------------------
+//Style de la section
+//--------------------------------------------
 .conteneur{
     @extend .col-12;
     @include marginSectionMobile;
-    
-    
-    & .conteneur-img-horizontal{
-        position: relative;
-        right: 20px;
-        @include marginEnfantMobile;
-        
-        & > img{
-            display: block;
-            width: 95%;
-            height: 200px;
-            border-radius: 0 200px 200px 0px;
+ 
+    //--------------------------------------------
+    //Style du sous-conteneur
+    //--------------------------------------------
+    & >div{
+        @include marginSousElementMobile;
+
+        //--------------------------------------------
+        //Style du conteneur de l'image
+        //--------------------------------------------
+        & .conteneur-img-horizontal{
+            
+            //--------------------------------------------
+            //Style des images
+            //--------------------------------------------
+            & > img{
+                display: block;
+                width: 95%;
+                height: 200px;
+                border-radius: 0 200px 200px 0px;
+            }
+            //--------------------------------------------
+            //Style de l'image tournée à droite
+            //--------------------------------------------
+            .img-droite{
+                border-radius: 200px 0  0 200px;
+            }
         }
-        .img-right{
-            border-radius: 200px 0  0 200px;
+
+        //--------------------------------------------
+        // Style du conteneur de l'image tournée à droite
+        //--------------------------------------------
+        & .conteneur-droite{
+            @include setFlex(flex-end, flex-end, center);   
+        }
+
+        //--------------------------------------------
+        //Style du texte
+        //--------------------------------------------
+        & .texte{
+            @include marginMobile;
+            margin-top: 1em;
         }
     }
 } 
 
-.container-right{
-    position: relative;
-    left: 55px;
 
-}
     
-.this{
-    width: 100%;
-    @include debug;
-}
+
 
 
     
