@@ -25,7 +25,7 @@ onBeforeMount(async () => {
 <template>
   <div class="conteneur">
     <div class="conteneur-image">
-        <img v-if="data.oeuvres.title" :src='data.oeuvres.primaryimageurl' class="img-test" alt="">
+        <img v-if="data.oeuvres.title" :src='data.oeuvres.primaryimageurl' class="img" alt="">
     </div>
     <div v-if="data.oeuvres.title" class="texte-centrer">
         <h3>{{ data.oeuvres.title }}</h3>

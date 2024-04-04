@@ -4,6 +4,7 @@
   import sectionImgL from "@/components/ER/PageAccueil/SectionImgL.vue"
   import sectionImgPleine from "@/components/ER/PageAccueil/SectionImgPleine.vue"
   import SectionImgDome from "@/components/ER/PageAccueil/SectionImgDome.vue"
+  import SectionImgDomeSimple from "@/components/ER/PageAccueil/SectionImgDomeSimple.vue"
 </script>
 <template>
   <div class="interface">
@@ -13,6 +14,7 @@
       <sectionImgL/>
       <sectionImgPleine/>
       <SectionImgDome/>
+      <SectionImgDomeSimple/>
     </main>
   </div>
 </template>
