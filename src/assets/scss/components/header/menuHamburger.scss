@@ -1,0 +1,92 @@
+//Style du menu hamburger
+//------------------------------
+//Élyzabelle Rollin
+//1720870
+
+//-------------------------------
+//Style général du menu
+//-------------------------------
+#menu-hamburger {
+  @include marginMobile;
+  width: 100%;
+  margin-top: 20px;
+  position: absolute;
+  z-index: 100;
+  @include breakpoint-min(768) {
+    display: none;
+  }
+
+  //-------------------------------
+  //Style du menu ouvrant
+  //-------------------------------
+  & .menu {
+    display: flex;
+    flex-direction: column;
+    background-color: #fff;
+    position: absolute;
+    top: 60px;
+    left: 0;
+    width: 200px;
+    border: 1px solid #ccc;
+  }
+
+  //-------------------------------
+  //Style du conteneur du menu
+  //-------------------------------
+  & .nav-mobile {
+    // display: flex;
+    // align-items: center;
+    // justify-content: center;
+    //-------------------------------
+    //Style du logo
+    //-------------------------------
+    & .logo {
+      height: 3em;
+      //   height: 2vh;
+      margin: 0 auto;
+      position: relative;
+      left: -15px;
+    }
+  }
+
+  //-------------------------------
+  //Style du bouton hamburger
+  //-------------------------------
+  & .hamburger {
+    margin: 0 20px;
+    position: absolute;
+    left: 0;
+    background-color: transparent;
+    border: none;
+
+    //-------------------------------
+    //Style de l'image du bouton
+    //-------------------------------
+    & img {
+      height: 25px;
+    }
+  }
+}
+
+.menu ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.menu li {
+  padding: 10px;
+  border-bottom: 1px solid #ccc;
+}
+
+.menu li:last-child {
+  border-bottom: none;
+}
+
+.menu a {
+  text-decoration: none;
+  color: black;
+}
+
+.menu a:hover {
+  color: blue;
+}
