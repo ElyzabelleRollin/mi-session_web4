@@ -1,7 +1,10 @@
-<script setup></script>
+<script setup>
+</script>
 <template>
-  <div class="interface">
-    <main></main>
+  <div class="Gab">
+    <main>
+      <h1>titre: {{ oeuvreUnique.title }}</h1>
+    </main>
   </div>
 </template>
 

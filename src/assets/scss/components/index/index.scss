@@ -1,0 +1,43 @@
+//  🥐 Page fait par Gabrielle
+
+.index {
+    background-color: #222222;
+    color: #efefef;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    h1 {
+        padding: 1em;
+        font-family: "Montserrat-Light";
+    }
+    .tableDesMatieres {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        li {
+            font-family: "Black Matteo";
+            padding: 0.5em 2em;
+            margin: 0.5rem;
+            font-size: 2em;
+        }
+        li:hover {
+            border: #efefef 1px solid;
+        }
+        p {
+            font-family: "Montserrat-Light";
+            width: 70%;
+            text-align: center;
+            padding-bottom: 2em;
+            font-size: 0.75em;
+        }
+    }
+    div.deco {
+        display: flex;
+        justify-content: end;
+        width: 100%;
+        img {
+            width: 80%;
+        }
+    }
+}
