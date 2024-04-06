@@ -1,3 +1,27 @@
+// //Style générale de la section 4
+// //-------------------------------------------
+// //Élyzabelle Rollin
+// //1720870
+
+// //--------------------------------------------
+// //Style de la section
+// //--------------------------------------------
+// .conteneur-section-pleine{
+//     @include marginSectionMobile;
+
+//     //--------------------------------------------
+//     //Style de l'image
+//     //--------------------------------------------
+//     & .img-pleine{
+//         display: block;
+//         width: 900px;
+//         height: 200px;
+//         margin: 0 auto;
+//         position: relative;
+//         right: 150px;
+//     }
+// }
+
 //Style générale de la section 4
 //-------------------------------------------
 //Élyzabelle Rollin
@@ -6,20 +30,44 @@
 //--------------------------------------------
 //Style de la section
 //--------------------------------------------
-.conteneur-section-pleine{
-    @include marginSectionMobile;
+.conteneur-section-pleine {
+  @include marginSectionMobile;
 
-    //--------------------------------------------
-    //Style de l'image
-    //--------------------------------------------
-    & .img-pleine{
-        display: block; 
-        width: 900px;
-        height: 200px;
-        margin: 0 auto;
-        position: relative;
-        right: 150px;
+  //--------------------------------------------
+  //Style de l'image
+  //--------------------------------------------
+  & .conteneur-image {
+    height: 200px;
+    overflow: hidden;
+  }
+
+  & .img-pleine {
+    position: relative;
+    right: 150px;
+    max-width: 1024px;
+    height: 200px;
+    width: 200%;
+    object-fit: cover;
+    object-position: center right;
+
+    @include breakpoint-min(768) {
+      margin: 0 auto;
     }
+    @include breakpoint-min(876) {
+      right: 0;
+    }
+    @include breakpoint-min(1025) {
+      height: 100%;
+      //   width: 100%;
+    }
+  }
+  & .texte-fiche {
+    @include marginMobile;
+    @include breakpoint-min(768) {
+      max-width: 1024px;
+    }
+    @include breakpoint-min(1025) {
+      margin: 0 auto;
+    }
+  }
 }
-
-

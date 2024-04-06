@@ -27,13 +27,13 @@
 </script>
 
 <template>
-  <div class="conteneur">
-    <div v-for="(art, index) in data.oeuvres" :key="index" class="fiche">
-      <div class="conteneur-img-horizontal" :class="{ 'conteneur-droite': index === 1 }">
+  <div class="conteneur-principal" id="conteneur-img">
+    <div v-for="(art, index) in data.oeuvres" :key="index" class="fiche"  :class="{ 'fiche-haut': index === 0, 'fiche-bas': index === 2} ">
+      <div  class="conteneur-img-horizontal" :class="{ 'conteneur-droite': index === 1 }">
           <img :src = 'art.primaryimageurl' alt="" 
-          :class="{ 'img-droite': index === 1 }">
+          :class="{ 'img-droite': index === 1} " >
       </div>
-      <div class="texte">
+      <div class="texte" :class="{ 'texte-droite': index === 1 }">
         <h3>{{ art.title }}</h3> 
         <p>{{ art.people[0].name }}</p> 
       </div>

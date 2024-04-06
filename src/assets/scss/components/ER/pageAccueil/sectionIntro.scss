@@ -9,12 +9,35 @@
 .conteneur{
     @include marginSectionMobile;
 
+
     //--------------------------------------
     //Style du logo
     //--------------------------------------
     & > .conteneur-image > .logo{
-        height: 200px;
+        @extend .col-10;
         margin: 0 auto;
+        //--------------------------------------
+        //Breakpoints mobile
+        //--------------------------------------
+        @include breakpoint-min(576){
+            @extend .col-sm-6;
+        }
+        //--------------------------------------
+        //Breakpoints tablette
+        //--------------------------------------
+        @include breakpoint-min(768){
+            @extend .col-md-6;
+        }
+        //--------------------------------------
+        //Breakpoints desktop
+        //--------------------------------------
+        @include breakpoint-min(992){
+            @extend .col-lg-4;
+            // @extend .col-lg-6;
+        }
+        @include breakpoint-min(1200){
+            @extend .col-xl-4;
+        }
     }
 
     //--------------------------------------
@@ -25,5 +48,28 @@
         @include marginMobile;
         text-align: center;
         line-height: 1.75em;
+
+        //--------------------------------------
+        //Breakpoints mobile
+        //--------------------------------------
+        @include breakpoint-min(576){
+            // @include debug;
+            @extend .col-sm-10;
+            margin: 0 auto;
+            font-size: 1.2em;
+            padding-top: 2em;
+        }
+        //--------------------------------------
+        //Breakpoints desktop
+        //--------------------------------------
+        @include breakpoint-min(992){
+            // @include debug;
+            @extend .col-lg-8;
+            padding-top: 2.5em;
+        }
+        @include breakpoint-min(1400){
+            @extend .col-xxl-6;   
+        }
+
     }
 }

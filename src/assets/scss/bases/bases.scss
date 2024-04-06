@@ -1,4 +1,8 @@
 @import 'normalize';
 @import 'mixins';
 @import 'variables';
-@import 'typos';
+@import '../bases/typos.scss';
+// @font-face {
+//     font-family: 'test2';
+//     src: url('../fonts/Black Matteo.woff') format('truetype');
+//   }

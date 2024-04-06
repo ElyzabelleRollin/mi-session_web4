@@ -27,7 +27,7 @@ onBeforeMount(async () => {
     <div class="conteneur-image">
         <img v-if="data.oeuvres.title" :src='data.oeuvres.primaryimageurl' class="img-pleine" alt="">
     </div>
-    <div v-if="data.oeuvres.title">
+    <div class="texte-fiche" v-if="data.oeuvres.title">
         <h3>{{ data.oeuvres.title }}</h3>
         <p :v-for="oeuvre in data.oeuvres">{{ data.oeuvres.people[0].name }}</p> 
     </div>

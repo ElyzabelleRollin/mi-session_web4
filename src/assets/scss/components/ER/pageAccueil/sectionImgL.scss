@@ -6,26 +6,78 @@
 //--------------------------------------------
 //Style de la section
 //--------------------------------------------
-.conteneur{
+.conteneur-L{
     @include marginSectionMobile;
 
     //--------------------------------------------
     //Style du sous-conteneur
     //--------------------------------------------
-    & .img-L{
-        position: relative;
-        left: 20%;
-        border-radius: 200px 200px 0 0 ;
-        @extend .col-12;
+    & .sous-conteneur{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    
+    //--------------------------------------------
+    //Breakpoint mobile
+    //--------------------------------------------
+    @include breakpoint-min(576){
+        flex-direction: row-reverse;
+        @extend .col-sm-10;
+        margin: 0 auto;
     }
+        & .conteneur-image-L{
+            //--------------------------------------------
+            //Breakpoint mobile
+            //--------------------------------------------
+            @include breakpoint-min(576){
+                @extend .col-sm-6; 
+            }
 
-    //--------------------------------------------
-    //Style du conteneur dutexte
-    //--------------------------------------------
-    & .texte-L {
-        @include marginMobile;
-        @include marginTopTexte;
-        text-align: right;
+            //--------------------------------------------
+            //Style du sous-conteneur
+            //--------------------------------------------
+            & .img-L{
+                position: relative;
+                left: 100px;
+                border-radius: 200px 200px 0 0 ;
+                width: 400px;
+                
+                //--------------------------------------------
+                //Breakpoint mobile
+                //--------------------------------------------
+                @include breakpoint-min(576){
+                    height: 600px;
+                    left: 0;
+                    margin: 0 auto;
+                }
+
+                //--------------------------------------------
+                //Breakpoint tablette
+                //--------------------------------------------
+                @include breakpoint-min(768){
+                    @extend .col-md-6;
+                }
+            }
+        }
+    
+        //--------------------------------------------
+        //Style du conteneur dutexte
+        //--------------------------------------------
+        & .texte-L {
+            @include marginMobile;
+            @include marginTopTexte;
+            text-align: right;
+            @extend .col-9;
+    
+            //--------------------------------------------
+            //Breakpoint mobile
+            //--------------------------------------------
+            @include breakpoint-min(576){
+                margin: auto 20px;
+                text-align: left;
+                @extend .col-sm-5;
+            }
+        }
     }
 }
 

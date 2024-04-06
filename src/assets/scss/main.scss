@@ -1,11 +1,19 @@
 @import '../../../node_modules/bootstrap/scss/bootstrap.scss';
-@import 'bases/bases';
+@import '../scss/bases/bases.scss';
 @import 'components/components';
 @import '../scss/pages/page.scss';
 
+
 .interface
 {
-    // font-family: 'Black Matteo, sans-serif';
-    font-weight: 400;
+    & p{
+        font-family: 'Montserrat';
+        font-weight: 500;
+    }
+
+    // & h3{
+    //     // font-family: 'BlackMatteo';
+    //     // font-size: 3em;
+    // }
     // margin: 20px;
 }
