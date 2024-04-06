@@ -19,7 +19,6 @@ div.expositionC{
 //-----------------------
 //container
 //-----------------------
-
 div.containerOeuvreC{
     margin: 32px;
     position: relative;
@@ -29,7 +28,6 @@ div.containerOeuvreC{
 //-----------------------
 //oeuvres
 //-----------------------
-
 div.containerOeuvreC{
     
     & div.imagesOeuvreC{
@@ -42,10 +40,8 @@ div.containerOeuvreC{
 //-----------------------
 //oeuvres titres
 //-----------------------
-
 div.containerOeuvreC{
     
-
     & div.nomOeuvreC{
 
         width: 300px;
@@ -62,14 +58,12 @@ div.containerOeuvreC{
             
         }
         
-        
     }
 }
 
 //-----------------------
 //oeuvres backgrounds
 //-----------------------
-
 div.containerOeuvreC{
     
     & div.backgroundOeuvreC{
@@ -86,7 +80,6 @@ div.containerOeuvreC{
 }
 
 
-
 //-----------------------------------------------
 //Oeuvres precise
 //-----------------------------------------------
@@ -97,11 +90,9 @@ div.containerOeuvrePreciseC{
     
 }
 
-
 //-----------------------
 //oeuvres
 //-----------------------
-
 div.containerOeuvrePreciseC{
     
     & div.imagesOeuvrePreciseC{
@@ -114,16 +105,24 @@ div.containerOeuvrePreciseC{
 //-----------------------
 //description
 //-----------------------
-
 div.containerOeuvrePreciseC{
 
     & div.descriptionOeuvrePreciseC{
 
         margin: 32px;
+        text-align: center;
 
         & p.desC{
             font-size: 16px;
         }
+        & p.titreDesC{
+            font-size: 24px;
+        }
     }
 
+}
+
+
+div.nomOeuvrePreciseC{
+    text-align: center;
 }
