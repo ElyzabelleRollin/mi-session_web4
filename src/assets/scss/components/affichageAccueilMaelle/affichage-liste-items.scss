@@ -33,14 +33,23 @@ div.liste-items01, div.liste-items02, div.liste-items03{
         @include setFlex(row, space-between, center);
         gap: 2rem;
         flex-wrap: nowrap;
-        display: flex;
         overflow-x: auto;
         -webkit-overflow-scrolling: touch;
         .e-resize {cursor: e-resize;}
+        &::-webkit-scrollbar {
+        }
+        &::-webkit-scrollbar-track {
+        }
+        &::-webkit-scrollbar-thumb {
+        }
     }
-    @include breakpoint-min(992){
-    }
-    @include breakpoint-min(1200){
+}
+@include breakpoint-min(1400){
+    div.liste-items01{
+        @include setFlex(row, left, center);
+        -webkit-overflow-scrolling: none;
+        .e-resize {cursor: default;}
+        
     }
 }
 
@@ -101,6 +110,9 @@ div.fiche-items-maelle{
             font-size: 2.5rem;
             margin : 1rem;
         }
+    }
+    @include breakpoint-min(2000){
+        width: 650px;
     }
 }
 
@@ -169,4 +181,19 @@ div.liste-items01, div.liste-items03{
         }
     }
     
+}
+@include breakpoint-min(1400){
+    div.liste-items01, div.liste-items02, div.liste-items03{
+        &::before{
+            left: 4%;
+        }
+    }
+    
+}
+@include breakpoint-min(2000){
+    div.liste-items01, div.liste-items02, div.liste-items03{
+        &::before{
+            left: 3%;
+        }
+    }
 }
