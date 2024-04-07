@@ -4,10 +4,6 @@
   <div class="index">
     <h1>Musée</h1>
     <ul class="tableDesMatieres">
-      <!-- <li><RouterLink to="/PageObjetEly">Ely</RouterLink></li>
-        <li><RouterLink to="/PageObjetGab">Gab</RouterLink></li>
-        <li><RouterLink to="/PageObjetCharles">Charles</RouterLink></li>
-        <li><RouterLink to="/PageObjetMaelle">Maelle</RouterLink></li> -->
       <li><RouterLink to="/PageAccueilEly">Floralis</RouterLink></li>
       <p>
         Dans le monde virtuel d'une exposition d'art en ligne, les spectateurs sont
@@ -20,8 +16,33 @@
         numérique de beauté éphémère, où l'art et la technologie se marient pour créer une
         expérience visuelle saisissante et inspirante.
       </p>
-      <li><RouterLink to="/PageAccueilCharles">Accueil Charles</RouterLink></li>
-      <li><RouterLink to="/PageAccueilMaelle">Accueil Maelle</RouterLink></li>
+      <li><RouterLink to="/PageAccueilCharles">Nota temporis</RouterLink></li>
+      <p>
+        Explorez la beauté mystique de l'art asiatique à travers notre exposition en ligne
+        mettant en vedette des œuvres réalisées à l'encre. Plongez dans l'élégance
+        intemporelle de la calligraphie chinoise, où chaque coup de pinceau raconte une
+        histoire millénaire. Découvrez la subtilité des paysages traditionnels japonais,
+        où la symbiose entre l'eau, l'encre et le papier crée des scènes poétiques et
+        contemplatives. Cette exposition vous emmène dans un voyage visuel à travers
+        l'Asie, explorant les thèmes spirituels, culturels et esthétiques qui ont inspiré
+        les artistes de cette région depuis des siècles. Laissez-vous envoûter par la
+        délicatesse des traits et la profondeur émotionnelle de ces œuvres d'art uniques,
+        alors que vous plongez dans la richesse de la tradition artistique asiatique.
+      </p>
+      <li><RouterLink to="/PageAccueilMaelle">Arma antiqua</RouterLink></li>
+      <p>
+        Plongez dans l'histoire tumultueuse de l'Europe médiévale et de la Renaissance à
+        travers notre exposition en ligne d'armes anciennes des XIVe au XVIe siècles.
+        Explorez un vaste assortiment d'armes de guerre et de défense magnifiquement
+        préservées, allant des épées à double tranchant aux imposantes armures de
+        chevalier. Chaque pièce raconte une histoire, témoignant de la virtuosité
+        artisanale et de la technologie militaire de l'époque. Grâce à des descriptions
+        détaillées et des images haute résolution, plongez dans les détails fascinants de
+        ces objets d'art martiaux, témoins silencieux d'une époque révolue mais toujours
+        captivante. Cette exposition en ligne offre une occasion unique d'apprécier la
+        richesse culturelle et l'héritage guerrier de l'Europe médiévale et de la
+        Renaissance, le tout depuis le confort de chez vous.
+      </p>
       <li>
         <RouterLink to="/PageAccueilGab"> Agapè</RouterLink>
       </li>
