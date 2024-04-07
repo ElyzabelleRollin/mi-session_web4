@@ -1,0 +1,100 @@
+//Style du carrousel
+//---------------------------------------
+//Élyzabelle Rollin
+//1720870
+
+//-------------------------------
+//Style du carrousel
+//-------------------------------
+.carousel-item {
+  & img {
+    height: 15vh;
+    filter: brightness(0.4);
+  }
+  //-------------------------------
+  //Style du conteneur du texte
+  //-------------------------------
+  .carousel-caption {
+    bottom: 45%;
+
+    //-------------------------------
+    //Breakpoint tablette
+    //-------------------------------
+    @include breakpoint-min(768) {
+      width: 45%;
+      margin-left: 29%;
+      bottom: 35%;
+    }
+
+    //-------------------------------
+    //Style du p et h5
+    //-------------------------------
+    & p,
+    & .nom {
+      //-------------------------------
+      //Breakpoint desktop
+      //-------------------------------
+      @include breakpoint-min(992) {
+        width: 100%;
+        position: relative;
+        top: 100px;
+      }
+      @include breakpoint-min(1100) {
+        top: 0;
+      }
+
+      //-------------------------------
+      //Style des titres des expositions
+      //-------------------------------
+      & h5 {
+        font-family: BlackMatteo;
+        font-size: 2em;
+      }
+    }
+
+    //-------------------------------
+    //Style du nom de l'exposition
+    //-------------------------------
+    .nom {
+      @include setFlex(row, center, center);
+
+      //-------------------------------
+      //Style de la décoration
+      //autour du nom
+      //-------------------------------
+      & .deco {
+        content: "";
+        display: block;
+        width: 25vw;
+        height: 1px;
+        background-color: white;
+        position: relative;
+        bottom: 5px;
+      }
+      //-------------------------------
+      //Style de la décoration
+      //avant le nom
+      //-------------------------------
+      & .avant {
+        margin-right: 1em;
+      }
+      //-------------------------------
+      //Style de la décoration
+      //après le nom
+      //-------------------------------
+      & .apres {
+        margin-left: 1em;
+      }
+    }
+  }
+}
+
+//-------------------------------
+//Style des puces du carrousel
+//-------------------------------
+.carousel-indicators {
+  @include breakpoint-min(768) {
+    width: 40%;
+    margin-left: 46%;
+  }
+}

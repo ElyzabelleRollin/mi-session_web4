@@ -36,55 +36,52 @@ import "bootstrap/dist/js/bootstrap.bundle.min.js";
       <div class="carousel-inner item">
         <div class="carousel-item active">
           <img
-            src="/assets/img/eric-park-QbX8A8eHfzw-unsplash.jpg"
+            src="/assets/img/georgia-de-lotz--3xSBrSzTjg-unsplash.jpg"
             class="d-block w-100"
             alt="..."
           />
-          <div class="carousel-caption d-md-block">
+          <div class="carousel-caption">
             <div class="nom">
               <span class="deco avant"></span>
               <h5>Floralis</h5>
               <span class="deco apres"></span>
             </div>
-            <p class="d-none">
+            <p class="d-none d-md-block">
               Bienvenue à notre exposition virtuelle dédiée à la nature !
-              Explorez sa beauté, sa vitalité et son importance. Des montagnes
-              aux profondeurs marines, découvrez son rôle essentiel. L'art,
-              l'inspiration, et la nécessité de la préserver vous attendent.
-              Plongez dans cet univers captivant dès maintenant !
+              Explorez sa beauté, sa vitalité et son importance.
             </p>
           </div>
         </div>
         <div class="carousel-item">
           <img
-            src="/assets/img/aaina-sharma-nqj3ncOPS0g-unsplash.jpg"
+            src="/assets/img/fia-yang-id5flV_U-Yc-unsplash.jpg"
             class="d-block w-100"
             alt="..."
           />
           <div class="carousel-caption d-md-block">
             <div class="nom">
               <span class="deco avant"></span>
-              <h5>Charle</h5>
+              <h5>Nota temporis</h5>
               <span class="deco apres"></span>
             </div>
-            <p class="d-none">
+            <p class="d-none d-md-block">
               Some representative placeholder content for the second slide.
             </p>
           </div>
         </div>
         <div class="carousel-item">
           <img
-            src="/assets/img/eric-park-QbX8A8eHfzw-unsplash.jpg"
+            src="/assets/img/rhii-photography-EZpvFGUYZKo-unsplash.jpg"
             class="d-block w-100"
             alt="..."
           />
           <div class="carousel-caption d-md-block">
             <div class="nom">
               <span class="deco avant"></span>
-              <h5>Mawelle</h5>
+              <h5>Arma antiqua</h5>
               <span class="deco apres"></span>
             </div>
-            <p class="d-none">
+            <p class="d-none d-md-block">
               Some representative placeholder content for the third slide.
             </p>
           </div>
@@ -101,7 +98,7 @@ import "bootstrap/dist/js/bootstrap.bundle.min.js";
               <h5>Agapè</h5>
               <span class="deco apres"></span>
             </div>
-            <p class="d-none">
+            <p class="d-none d-md-block">
               Some representative placeholder content for the third slide.
             </p>
           </div>

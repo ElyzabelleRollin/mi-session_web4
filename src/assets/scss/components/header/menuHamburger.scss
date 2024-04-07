@@ -66,27 +66,22 @@
       height: 25px;
     }
   }
-}
-
-.menu ul {
-  list-style-type: none;
-  padding: 0;
-}
-
-.menu li {
-  padding: 10px;
-  border-bottom: 1px solid #ccc;
-}
-
-.menu li:last-child {
-  border-bottom: none;
-}
-
-.menu a {
-  text-decoration: none;
-  color: black;
-}
-
-.menu a:hover {
-  color: blue;
+  & .menu ul {
+    list-style-type: none;
+    padding: 0;
+    & li {
+      padding: 10px;
+      border-bottom: 1px solid #ccc;
+      &:last-child {
+        border-bottom: none;
+      }
+      & a {
+        text-decoration: none;
+        color: black;
+        &:hover {
+          color: blue;
+        }
+      }
+    }
+  }
 }
