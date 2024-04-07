@@ -18,12 +18,3 @@ main{
     @include setFlex(column, start, center);
     width: 100%;
 }
-// - - - - - - - - - - - - - - - - - - - - - - - - - - -
-// Structure générale interface page Accueil Maelle
-// - - - - - - - - - - - - - - - - - - - - - - - - - - -
-div.interface-maelle{
-    @extend .container-fluid;
-    @include resetBox;
-    width: 100%;
-    min-height: 100vh;
-}

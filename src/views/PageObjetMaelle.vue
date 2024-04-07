@@ -24,7 +24,7 @@
                 data.detailItem = response.data;
 
                 if(data.detailItem.images.length === 0){
-                    data.itemImg = '/src/assets/img/pasdimage.jpg'
+                    data.itemImg = '/public/assets/img/png/sans_image.png'
                 }else{
                     data.itemImg = data.detailItem.images[0].baseimageurl;
                 }

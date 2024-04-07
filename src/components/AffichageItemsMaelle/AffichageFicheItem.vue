@@ -16,7 +16,7 @@
   onMounted(() => {
 
       if(props.itemInfo.images.length === 0){
-            data.itemImg = '/src/assets/img/pasdimage.jpg'
+            data.itemImg = '/public/assets/img/png/sans_image.png'
       }else{
             data.itemImg = props.itemInfo.images[0].baseimageurl;
       }

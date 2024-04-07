@@ -68,13 +68,6 @@
 <template>
   <div class="interface-maelle">
     <main>
-        <!-- <div class="annee">
-            <p>1</p>
-            <p>3</p>
-            <p>0</p>
-            <p>0</p>
-            <p>1600</p>
-        </div> -->
         <div class="liste-items01">
             <!-- item 1 et 2 -->
             <AffichageFicheItem v-for="item in data.tableauItems01" 

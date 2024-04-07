@@ -10,7 +10,7 @@ div.liste{
     position: relative;
     width: 100%;
     min-height: 100vh;
-     
+    
     & .liste-items01{
         background-color: #f4eeed;
     }
@@ -20,15 +20,15 @@ div.liste{
     & .liste-items03{
         background-color: #faf4e3;
     }
-    
-    
 }
+
 // - - - - - - - - - - - - - - - - - - - - - - - - - - -
 // Structure affichage des sections
 // - - - - - - - - - - - - - - - - - - - - - - - - - - -
 
 div.liste-items01, div.liste-items02, div.liste-items03{
     @include setFlex(column, center, center);
+    position: relative;
     @include breakpoint-min(768){
         @include setFlex(row, space-between, center);
         gap: 2rem;
@@ -39,13 +39,8 @@ div.liste-items01, div.liste-items02, div.liste-items03{
         .e-resize {cursor: e-resize;}
     }
     @include breakpoint-min(992){
-        @include setFlex(row, space-between, center);
-        gap: 0;
-        flex-wrap: nowrap;
-        display: flex;
-        overflow-x: auto;
-        -webkit-overflow-scrolling: touch;
-        .e-resize {cursor: e-resize;}
+    }
+    @include breakpoint-min(1200){
     }
 }
 
@@ -111,7 +106,7 @@ div.fiche-items-maelle{
 
 
 // - - - - - - - - - - - - - - - - - - - - - - - - - - -
-// Structure affichage link de la deuxieme section
+// Structure affichage link des items section 1 et 3
 // - - - - - - - - - - - - - - - - - - - - - - - - - - -
 div.liste-items02{
     @include resetBox;
@@ -130,4 +125,48 @@ div.liste-items01, div.liste-items03{
             }
         }
     }
+}
+
+// - - - - - - - - - - - - - - - - - - - - - - - - - - -
+// Structure affichage ligne du temps
+// - - - - - - - - - - - - - - - - - - - - - - - - - - -
+@include breakpoint-min(768){
+    div.liste-items01, div.liste-items02, div.liste-items03{
+        &::before{
+            content : "1 2 0 0  1 3 0 0 à 1 6 0 0 1 7 0 0";
+            max-width: 26px;
+            position: relative;
+            left: 2%;
+            padding: 1rem .5rem;
+            font-family: 'Handmade';
+            font-weight: bold;
+            font-size: .8rem ;
+            line-height: 3.5vh;
+
+            background: -webkit-linear-gradient(#c3c3c3, #000000, #c3c3c3);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+    }
+    div.liste-items02{
+        &::before{
+            content : "1 5 0 0 1 6 0 0 à 1 8 0 0 1 9 0 0";
+            background: -webkit-linear-gradient(#949494, #000000, #949494);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+    }
+    div.liste-items03{
+        &::before{
+            content : "1 7 0 0 1 8 0 0 à 1 9 0 0 2 0 0 0";
+        }
+    }
+}
+@include breakpoint-min(992){
+    div.liste-items01, div.liste-items02, div.liste-items03{
+        &::before{
+            left: 5%;
+        }
+    }
+    
 }
