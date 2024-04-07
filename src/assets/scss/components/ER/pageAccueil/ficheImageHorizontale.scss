@@ -1,0 +1,63 @@
+//Style générale de la section 2
+//-------------------------------------------
+//Élyzabelle Rollin
+//1720870
+
+//--------------------------------------------
+//Style de la section
+//--------------------------------------------
+.conteneur{
+    @extend .col-12;
+    @include marginSectionMobile;
+ 
+    //--------------------------------------------
+    //Style du sous-conteneur
+    //--------------------------------------------
+    & > .fiche{
+        @include marginSousElementMobile;
+
+        //--------------------------------------------
+        //Style du conteneur de l'image
+        //--------------------------------------------
+        & .conteneur-img-horizontal{
+            
+            //--------------------------------------------
+            //Style des images
+            //--------------------------------------------
+            & > img{
+                display: block;
+                width: 95%;
+                height: 200px;
+                border-radius: 0 200px 200px 0px;
+            }
+            //--------------------------------------------
+            //Style de l'image tournée à droite
+            //--------------------------------------------
+            .img-droite{
+                border-radius: 200px 0  0 200px;
+            }
+        }
+
+        //--------------------------------------------
+        // Style du conteneur de l'image tournée à droite
+        //--------------------------------------------
+        & .conteneur-droite{
+            @include setFlex(flex-end, flex-end, center);   
+        }
+
+        //--------------------------------------------
+        //Style du texte
+        //--------------------------------------------
+        & .texte{
+            @include marginMobile;
+            @include marginTopTexte;
+        }
+    }
+} 
+
+
+    
+
+
+
+    

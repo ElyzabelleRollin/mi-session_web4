@@ -1,4 +1,10 @@
-@import 'node_modules/bootstrap/scss/bootstrap';
-@import 'bases/bases';
-@import 'components/components';
-@import '../scss/pages/page.scss';
+@import "../../../node_modules/bootstrap/scss/bootstrap.scss";
+@import "bases/bases";
+@import "components/components";
+@import "../scss/pages/page.scss";
+
+.interface {
+  //   font-family: "BlackMatteo, sans-serif";
+  font-weight: 400;
+  // margin: 20px;
+}

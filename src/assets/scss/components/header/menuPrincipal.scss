@@ -1,0 +1,127 @@
+//Style du menu principal tablette et desktop
+//---------------------------------------
+//Élyzabelle Rollin
+//1720870
+
+//-------------------------------
+//Style du menu principal
+//-------------------------------
+header {
+  @include breakpoint-min(768) {
+    position: relative;
+  }
+}
+
+//-------------------------------
+//Style du conteneur du menu
+//-------------------------------
+.menu {
+  display: none;
+  //-------------------------------
+  //Breakpoint tablette
+  //-------------------------------
+  @include breakpoint-min(768) {
+    display: block;
+    background-color: rgba($color: #fff, $alpha: 0.65);
+    height: 100%;
+    position: absolute;
+    z-index: 999;
+  }
+  //-------------------------------
+  //Breakpoint desktop
+  //-------------------------------
+  @include breakpoint-min(992) {
+    height: 100%;
+    width: 850px;
+    z-index: 999;
+    clip-path: polygon(0% 0%, 850px 0%, 0% 100%);
+  }
+
+  //-------------------------------
+  //Style conteneur du menu
+  //-------------------------------
+  .flex {
+    //-------------------------------
+    //Breakpoint tablette
+    //-------------------------------
+    @include breakpoint-min(768) {
+      @include setFlex(column, center, center);
+      margin: 0 auto;
+      margin-top: 45%;
+      padding: 0 2em;
+    }
+    //-------------------------------
+    //Breakpoint desktop
+    //-------------------------------
+    @include breakpoint-min(992) {
+      position: relative;
+      top: 7em;
+      right: 21%;
+      padding: 0;
+      margin: 0;
+    }
+
+    //-------------------------------
+    //Style du conteneur du logo
+    //-------------------------------
+    & > div {
+      @include breakpoint-min(768) {
+        width: fit-content;
+      }
+      //-------------------------------
+      //Style du logo
+      //-------------------------------
+      & img {
+        //-------------------------------
+        //Breakpoint tablette
+        //-------------------------------
+        @include breakpoint-min(768) {
+          height: 100px;
+          margin-bottom: 2rem;
+        }
+
+        //-------------------------------
+        //Breakpoint desktop
+        //-------------------------------
+        @include breakpoint-min(992) {
+          height: 100px;
+          margin: 0;
+        }
+      }
+    }
+
+    //-------------------------------
+    //Style du conteneur des liens
+    //-------------------------------
+    & .conteneur-liens {
+      //-------------------------------
+      //Breakpoint tablette
+      //-------------------------------
+      @include breakpoint-min(768) {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+      //-------------------------------
+      //Breakpoint desktop
+      //-----------------------------
+      @include breakpoint-min(992) {
+        flex-direction: row;
+        width: fit-content;
+      }
+
+      //-------------------------------
+      //Style des liens
+      //-------------------------------
+      & li {
+        //-------------------------------
+        //Breakpoint tablette
+        //-------------------------------
+        @include breakpoint-min(768) {
+          margin: 16px;
+          list-style: none;
+        }
+      }
+    }
+  }
+}

@@ -1,3 +1,8 @@
+//Style général
+//----------------------------------------------
+//Élyzabelle Rollin
+//1720870
+
 @mixin setFlex($direction, $justify, $align){
     display: flex;
     flex-direction: $direction;
@@ -19,3 +24,40 @@
     padding : 0;
     margin: 0;
 }
+
+//Style général mobile
+//----------------------------------------------
+//Élyzabelle Rollin
+//1720870
+
+@mixin marginSectionMobile{
+    margin-top: 150px;
+}
+
+@mixin marginEnfantMobile{
+    margin-top: 25px;
+}
+
+@mixin marginSousElementMobile{
+    margin-top: 100px;
+}
+
+@mixin marginMobile{
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+@mixin marginTopTexte{
+    padding-top: 1em;
+}
+
+//Style général tablette
+//----------------------------------------------
+//Élyzabelle Rollin
+//1720870
+
+
+//Style général desktop
+//----------------------------------------------
+//Élyzabelle Rollin
+//1720870
