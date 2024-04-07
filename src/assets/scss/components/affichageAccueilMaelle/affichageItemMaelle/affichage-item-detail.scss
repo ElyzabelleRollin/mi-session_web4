@@ -99,11 +99,20 @@ main.detail-maelle {
             color: #090909;
         }
     }
-
-// - - - - - - - - - - - - - - - - - - - - - - - - - - -
-// Breakpoint 768px structure description
-// - - - - - - - - - - - - - - - - - - - - - - - - - - -
+    
+    // - - - - - - - - - - - - - - - - - - - - - - - - - - -
+    // Breakpoint 768px structure description
+    // - - - - - - - - - - - - - - - - - - - - - - - - - - -
     @include breakpoint-min(768){
+        
+        div.img-detail-maelle {
+            & img{
+                margin: 2rem auto 0;
+                width: 50%;
+                height: 40vh;
+            }  
+        }
+        
         .info-description-maelle {
             text-align: center;
             margin: 0 auto;
@@ -138,13 +147,6 @@ main.detail-maelle {
             }
             & p.sans-description-oeuvre{
                 margin-top: 6rem;
-            }
-        }
-        main.detail-maelle .img-detail-maelle {
-            & img{
-                margin-top: 2rem;
-                width: 200px;
-                height: 20vh;
             }
         }
     }
