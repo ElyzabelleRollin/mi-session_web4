@@ -38,25 +38,28 @@
 <template>
   <div class="interface-maelle">
     <main class="detail-maelle">
-      <h2>Arsenal du temps</h2>
+      <div class="titre">
+      <img src="/public/assets/img/logo/logo-maelle01.svg" alt="logo" class="logo">
+        <h2>Arsenal du temps</h2>
+      </div>
+        <p class="nom-oeuvre-maelle" v-text="data.detailItem.title"></p>
 
-      <p class="nom-oeuvre-maelle" v-text="data.detailItem.title"></p>
-
-      <div class="info-type-maelle">
+      <div class="info-type-maelle info">
         <div class="contour">
-          <p class="type-oeuvre" v-text="data.detailItem.worktypes[0].worktype"></p>
+          <p class="type-oeuvre" >Type : {{ data.detailItem.worktypes[0].worktype }}</p>
         </div>
       </div>
 
-      <div class="info-annee-maelle">
+      <div class="info-annee-maelle info">
         <div class="contour">
-          <p class="annee-oeuvre" v-text="data.detailItem.dated"></p>
+          <p class="annee-oeuvre" > Année : {{ data.detailItem.dated}}:</p>
         </div>
       </div>
 
-      <div class="info-periode-maelle">
+      <div class="info-periode-maelle info">
         <div class="contour">
-          <p class="periode-oeuvre" v-text="data.detailItem.period"></p>
+          <p class="periode-oeuvre" v-if="data.detailItem.period"> Période : {{ data.detailItem.period }}</p>
+          <p class="periode-oeuvre" v-else>Aucune période précise</p>
         </div>
       </div>
 
@@ -69,9 +72,11 @@
       </div>
 
       <div class="info-description-maelle">
-        <p class="description">Description</p>
-        <p class="description-oeuvre" v-if="data.detailItem.description" >{{ data.detailItem.description }}</p>
-        <p class="description-oeuvre" v-else >Aucune description</p>
+        <div class="contour-description"></div>
+          <p class="description">Description</p>
+          <p class="description-oeuvre" v-if="data.detailItem.description" >{{ data.detailItem.description }}</p>
+          <p class="description-oeuvre sans-description-oeuvre" v-else >Aucune description</p>
+     
       </div>
 
       <div class="info-permission-maelle">

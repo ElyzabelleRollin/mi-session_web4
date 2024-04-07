@@ -8,25 +8,34 @@
 main.detail-maelle {
     @include setFlex(row, start, center);
     @include resetBox;
+    position: relative;
     width: 100%;   
     text-align: center;
     background-color: #f4eeed;
-    & p.nom-oeuvre-maelle{
+    & div.titre{
+        @include setFlex(row, center, center);
+        @include resetBox;
+        width: 100%;
+        & h2 {
+            @include resetBox;
+            font-family: 'Handmade';
+            padding-top: 1rem ;
+            font-size: 2rem;
+            font-weight: 300;
+        }
+        & .logo{
+            @include resetBox;
+            padding: 1rem;
+            width: 18%;
+            height: 10vh;
+        }
+    }
+    
+    & .nom-oeuvre-maelle {
         @include resetBox;
         padding: 1.5rem 1rem 1rem;
-    }
-
-    & h2 {
-        @include resetBox;
-        padding-top: 1rem ;
-        font-size: 2rem;
-        font-weight: 300;
-    }
-
-    & .nom-oeuvre-maelle {
         font-size: 1.5rem;
         font-weight: bold;
-        padding: 1rem;
     }
     & .info-type-maelle {
         text-transform: capitalize;
@@ -50,15 +59,14 @@ main.detail-maelle {
     }
     & .info-description-maelle {
         position: relative;
-        overflow: hidden;
-        padding: 0 0rem 1rem ;
-        color: #000;
         
         & p.description{
             position: absolute;
             top: 3%;
             left: 20%;
             padding: 1rem 3rem 3rem;
+            font-family: 'Handmade';
+            font-weight: bold;
             font-size: 1.3rem;
             font-weight: 500;
             background-color: #D7D9BB;
@@ -82,12 +90,87 @@ main.detail-maelle {
         }
     }
     & .link {
+        font-family: 'Handmade';
         padding-bottom: 1rem;
         color: #6E6F5E;
         &:hover {
             font-weight: 500;
             font-style: italic;
-            color: #222;
+            color: #090909;
         }
+    }
+
+// - - - - - - - - - - - - - - - - - - - - - - - - - - -
+// Breakpoint 768px structure description
+// - - - - - - - - - - - - - - - - - - - - - - - - - - -
+    @include breakpoint-min(768){
+        .info-description-maelle {
+            text-align: center;
+            margin: 0 auto;
+            & div.contour-description{
+                position: absolute;
+                top: 20%;
+                left: 9%;
+                padding: 4rem 6.5rem;
+                border: 2px solid #6E6F5E;
+            }
+            & p.description{
+                top: 25%;
+                left: 11%;
+                padding: 3rem 6rem 3rem 1rem;
+            }
+            & p.description-oeuvre{
+                text-align: end;
+                width: 90%;
+                margin: 3rem auto;
+                padding: 2rem 2rem 2rem 15rem;
+                clip-path: polygon(
+                    0 100%,
+                    40% 0%,
+                    40% 0,
+                    100% 0%,
+                    100% 100%,
+                    100% 100%,
+                    100% 100%,
+                    0% 100%,
+                    0% 0%
+                )
+            }
+            & p.sans-description-oeuvre{
+                margin-top: 6rem;
+            }
+        }
+        main.detail-maelle .img-detail-maelle {
+            & img{
+                margin-top: 2rem;
+                width: 200px;
+                height: 20vh;
+            }
+        }
+    }
+}
+// - - - - - - - - - - - - - - - - - - - - - - - - - - -
+// Breakpoint 768px structure info
+// - - - - - - - - - - - - - - - - - - - - - - - - - - -
+@include breakpoint-min(768){
+    p{
+        margin: 0;
+    }
+    div.info{
+        @include resetBox;
+        position: absolute;
+        width: 25%;
+        top: 20%;
+        left: 3%;
+        border: #6E6F5E solid 2px;
+        padding: 1rem;
+    }
+    div.info-annee-maelle{
+        position: absolute;
+        top: 30%;
+        left: 72.5%;
+    }
+    div.info-periode-maelle{
+        top: 45%;
     }
 }
