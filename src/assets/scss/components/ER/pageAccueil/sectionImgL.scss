@@ -6,79 +6,115 @@
 //--------------------------------------------
 //Style de la section
 //--------------------------------------------
-.conteneur-L{
-    @include marginSectionMobile;
+.conteneur-L {
+  @include marginSectionMobile;
+  @include breakpoint-min(768) {
+    @include marginSectionTablette;
+  }
+  @include breakpoint-min(992) {
+    @include marginSectionDesktop;
+  }
 
-    //--------------------------------------------
-    //Style du sous-conteneur
-    //--------------------------------------------
-    & .sous-conteneur{
-    display: flex;
-    flex-direction: column;
-    align-items: flex-end;
-    
+  //--------------------------------------------
+  //Style du sous-conteneur
+  //--------------------------------------------
+  & .sous-conteneur {
+    @include setFlex(column, center, center);
+
     //--------------------------------------------
     //Breakpoint mobile
     //--------------------------------------------
-    @include breakpoint-min(576){
-        flex-direction: row-reverse;
-        @extend .col-sm-10;
-        margin: 0 auto;
+    @include breakpoint-min(576) {
+      flex-direction: row-reverse;
+      margin: 0 auto;
     }
-        & .conteneur-image-L{
-            //--------------------------------------------
-            //Breakpoint mobile
-            //--------------------------------------------
-            @include breakpoint-min(576){
-                @extend .col-sm-6; 
-            }
+    //--------------------------------------------
+    //Style du conteneur de l'image
+    //--------------------------------------------
+    & .conteneur-image {
+      @include marginMobile;
+      margin: 0 auto;
+      @extend .col-10;
+      border-radius: 200px 200px 0 0;
+      overflow: hidden;
+      //--------------------------------------------
+      //Breakpoint mobile
+      //--------------------------------------------
+      @include breakpoint-min(576) {
+        margin: 0;
+      }
 
-            //--------------------------------------------
-            //Style du sous-conteneur
-            //--------------------------------------------
-            & .img-L{
-                position: relative;
-                left: 100px;
-                border-radius: 200px 200px 0 0 ;
-                width: 400px;
-                
-                //--------------------------------------------
-                //Breakpoint mobile
-                //--------------------------------------------
-                @include breakpoint-min(576){
-                    height: 600px;
-                    left: 0;
-                    margin: 0 auto;
-                }
+      //--------------------------------------------
+      //Breakpoint desktop
+      //--------------------------------------------
+      @include breakpoint-min(1400) {
+        @extend .col-xxl-12;
+        width: 450px;
+      }
 
-                //--------------------------------------------
-                //Breakpoint tablette
-                //--------------------------------------------
-                @include breakpoint-min(768){
-                    @extend .col-md-6;
-                }
-            }
-        }
-    
+      //--------------------------------------------
+      //Style de l'image
+      //--------------------------------------------
+      & .img-L {
+        width: 100%;
+        max-height: 580px;
+
         //--------------------------------------------
-        //Style du conteneur dutexte
+        //Breakpoint mobile
         //--------------------------------------------
-        & .texte-L {
-            @include marginMobile;
-            @include marginTopTexte;
-            text-align: right;
-            @extend .col-9;
-    
-            //--------------------------------------------
-            //Breakpoint mobile
-            //--------------------------------------------
-            @include breakpoint-min(576){
-                margin: auto 20px;
-                text-align: left;
-                @extend .col-sm-5;
-            }
+        @include breakpoint-min(576) {
+          max-width: 100%;
         }
+
+        //--------------------------------------------
+        //Breakpoint tablette
+        //--------------------------------------------
+        @include breakpoint-min(768) {
+          @extend .col-md-6;
+        }
+
+        //--------------------------------------------
+        //Breakpoint desktop
+        //--------------------------------------------
+        @include breakpoint-min(1400) {
+          @extend .col-xxl-12;
+          max-height: 100%;
+        }
+      }
     }
+
+    //--------------------------------------------
+    //Style du conteneur dutexte
+    //--------------------------------------------
+    & .texte-L {
+      @include marginMobile;
+      @include marginTopTexte;
+      text-align: center;
+
+      //--------------------------------------------
+      //Breakpoint mobile
+      //--------------------------------------------
+      @include breakpoint-min(576) {
+        margin: auto 20px;
+        @extend .col-sm-5;
+        text-align: left;
+      }
+      //--------------------------------------------
+      //Breakpoint tablette
+      //--------------------------------------------
+      @include breakpoint-min(768) {
+        @extend .col-md-4;
+        margin-right: 2rem;
+      }
+      //--------------------------------------------
+      //Breakpoint desktop
+      //--------------------------------------------
+      @include breakpoint-min(992) {
+        margin-right: 4rem;
+      }
+      @include breakpoint-min(1200) {
+        margin-right: 6rem;
+      }
+    }
+  }
 }
-
-

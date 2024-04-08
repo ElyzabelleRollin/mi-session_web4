@@ -1,0 +1,40 @@
+//Style générale de la section 5 et 6
+//-------------------------------------------
+//Élyzabelle Rollin
+//1720870
+
+//--------------------------------------------
+//Style de la section
+//--------------------------------------------
+.conteneur-S {
+  //--------------------------------------------
+  //Style du conteneur de l'image
+  //--------------------------------------------
+  .conteneur-image {
+    // @extend .col-8;
+    width: 50%;
+    margin: 0 auto;
+    overflow: hidden;
+    border-radius: 200px 200px 0 0;
+
+    //--------------------------------------------
+    //Style de l'image
+    //--------------------------------------------
+    & .img {
+      width: 110%;
+      position: relative;
+      left: -10px;
+      top: -10px;
+    }
+  }
+
+  //--------------------------------------------
+  //Style du conteneur du texte
+  //--------------------------------------------
+  & .texte-centrer {
+    @include marginTopTexte;
+    @extend .col-10;
+    margin: 0 auto;
+    text-align: center;
+  }
+}

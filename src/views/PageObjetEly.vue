@@ -24,33 +24,37 @@ onBeforeMount(() => {
 
 <template>
   <div class="conteneur-details">
-    <h1>{{ data.oeuvres.title }}</h1>
-    <div>
-      <img :src="data.oeuvres.primaryimageurl" :alt="data.oeuvres.title" />
+    <div class="test">
+      <h1>{{ data.oeuvres.title }}</h1>
+      <div class="conteneur-image">
+        <img :src="data.oeuvres.primaryimageurl" :alt="data.oeuvres.title" />
+      </div>
     </div>
-    <section>
-      <h2>Identification et création</h2>
-      <div>
-        <p><span>Numéro de l'objet:</span> {{ data.oeuvres.objectnumber }}</p>
-        <p><span>Titre:</span> {{ data.oeuvres.title }}</p>
-        <p v-for="oeuvre in data.oeuvres.people" :key="oeuvre.id">
-          <span>Artiste:</span> {{ oeuvre.name }}
-        </p>
-        <p><span>Date:</span>{{ data.oeuvres.century }}</p>
-      </div>
-    </section>
-    <section>
-      <h2>Provenance</h2>
-      <div>
-        <p>{{ data.oeuvres.provenance }}</p>
-      </div>
-    </section>
-    <section>
-      <h2>Permission</h2>
-      <div>
-        <p>{{ data.oeuvres.creditline }}</p>
-      </div>
-    </section>
+    <div class="infos">
+      <section>
+        <h2>Identification et création</h2>
+        <div>
+          <p><span>Numéro de l'objet:</span> {{ data.oeuvres.objectnumber }}</p>
+          <p><span>Titre:</span> {{ data.oeuvres.title }}</p>
+          <p v-for="oeuvre in data.oeuvres.people" :key="oeuvre.id">
+            <span>Artiste:</span> {{ oeuvre.name }}
+          </p>
+          <p><span>Date: </span>{{ data.oeuvres.century }}</p>
+        </div>
+      </section>
+      <section>
+        <h2>Provenance</h2>
+        <div>
+          <p>{{ data.oeuvres.provenance }}</p>
+        </div>
+      </section>
+      <section>
+        <h2>Permission</h2>
+        <div>
+          <p>{{ data.oeuvres.creditline }}</p>
+        </div>
+      </section>
+    </div>
   </div>
 </template>
 

@@ -1,27 +1,3 @@
-// //Style générale de la section 4
-// //-------------------------------------------
-// //Élyzabelle Rollin
-// //1720870
-
-// //--------------------------------------------
-// //Style de la section
-// //--------------------------------------------
-// .conteneur-section-pleine{
-//     @include marginSectionMobile;
-
-//     //--------------------------------------------
-//     //Style de l'image
-//     //--------------------------------------------
-//     & .img-pleine{
-//         display: block;
-//         width: 900px;
-//         height: 200px;
-//         margin: 0 auto;
-//         position: relative;
-//         right: 150px;
-//     }
-// }
-
 //Style générale de la section 4
 //-------------------------------------------
 //Élyzabelle Rollin
@@ -32,15 +8,23 @@
 //--------------------------------------------
 .conteneur-section-pleine {
   @include marginSectionMobile;
+  @include breakpoint-min(768) {
+    @include marginSectionTablette;
+  }
+  @include breakpoint-min(992) {
+    @include marginSectionDesktop;
+  }
 
   //--------------------------------------------
-  //Style de l'image
+  //Style du conteneur de l'image
   //--------------------------------------------
   & .conteneur-image {
     height: 200px;
     overflow: hidden;
   }
-
+  //--------------------------------------------
+  //Style de l'image
+  //--------------------------------------------
   & .img-pleine {
     position: relative;
     right: 150px;
@@ -49,25 +33,41 @@
     width: 200%;
     object-fit: cover;
     object-position: center right;
-
+    //--------------------------------------------
+    //Breakpoint tablette
+    //--------------------------------------------
     @include breakpoint-min(768) {
       margin: 0 auto;
     }
     @include breakpoint-min(876) {
       right: 0;
     }
+    //--------------------------------------------
+    //Breakpoint desktop
+    //--------------------------------------------
     @include breakpoint-min(1025) {
       height: 100%;
       //   width: 100%;
     }
   }
+  //--------------------------------------------
+  //Style du conteneur de l'image
+  //--------------------------------------------
   & .texte-fiche {
     @include marginMobile;
+    margin-top: 1.5rem;
+    //--------------------------------------------
+    //Breakpoint tablette
+    //--------------------------------------------
     @include breakpoint-min(768) {
       max-width: 1024px;
     }
+    //--------------------------------------------
+    //Breakpoint desktop
+    //--------------------------------------------
     @include breakpoint-min(1025) {
-      margin: 0 auto;
+      margin-left: auto;
+      margin-right: auto;
     }
   }
 }

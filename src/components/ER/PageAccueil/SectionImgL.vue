@@ -1,36 +1,43 @@
 <script setup>
-import { reactive, onBeforeMount } from 'vue'
-import axios from 'axios'
+import { reactive, onBeforeMount } from "vue";
+import axios from "axios";
 
 const data = reactive({
-  oeuvres: {}
-})
+  oeuvres: {},
+});
 
-const oeuvresID = 311878
-const url = 'https://api.harvardartmuseums.org/'
-const type = 'object/'
-const cleAPI = 'apikey=7c4a3a17-da3e-4661-91fe-602f96ff8a28'
+const oeuvresID = 311878;
+const url = "https://api.harvardartmuseums.org/";
+const type = "object/";
+const cleAPI = "apikey=7c4a3a17-da3e-4661-91fe-602f96ff8a28";
 
-onBeforeMount(async () => {
-  try {
-    const response = await axios.get(url + type + oeuvresID + "?" + cleAPI)
-    data.oeuvres = response.data
+onBeforeMount(() => {
+  axios.get(url + type + oeuvresID + "?" + cleAPI).then((response) => {
+    data.oeuvres = response.data;
     console.log(data.oeuvres);
-  } catch (error) {
-    console.error(error)
-  }
-})
+  });
+});
 </script>
 
 <template>
   <div v-if="data.oeuvres.title" class="conteneur-L">
     <div class="sous-conteneur">
-      <div class="conteneur-image-L">
-        <img :src='data.oeuvres.primaryimageurl' class="img-L">
-      </div>
+      <RouterLink
+        v-if="data.oeuvres.id"
+        :to="{ name: 'pageobjetely', params: { id: data.oeuvres.id } }"
+      >
+        <div class="conteneur-image">
+          <img
+            :src="data.oeuvres.primaryimageurl"
+            class="img-L"
+            :alt="data.oeuvres.title"
+          />
+        </div>
+      </RouterLink>
       <div class="texte-L">
         <h3>{{ data.oeuvres.title }}</h3>
-        <p v-if="data.oeuvres.people.length > 0">{{ data.oeuvres.people[0].name }}
+        <p v-if="data.oeuvres.people.length > 0">
+          {{ data.oeuvres.people[0].name }}
         </p>
       </div>
     </div>

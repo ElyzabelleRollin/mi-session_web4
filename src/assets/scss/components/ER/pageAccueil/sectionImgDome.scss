@@ -7,24 +7,51 @@
 //Style de la section
 //--------------------------------------------
 .conteneur-D {
+  @include marginSectionMobile;
+  @include breakpoint-min(768) {
+    @include marginSectionTablette;
+  }
+  @include breakpoint-min(992) {
+    @include marginSectionDesktop;
+  }
+
+  @include breakpoint-min(576) {
+    max-width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  @include breakpoint-min(768) {
+    max-width: 60%;
+  }
+  @include breakpoint-min(992) {
+    max-width: 550px;
+  }
+
   //--------------------------------------------
   //Style du conteneur de l'image
   //--------------------------------------------
   .conteneur-image {
-    // @extend .col-8;
-    width: 50%;
+    @extend .col-8;
+
     margin: 0 auto;
     overflow: hidden;
     border-radius: 200px 200px 0 0;
+    // height: 650px;
+    height: 5%;
+    // height: 5%;
+    // max-height: 600px;
 
     //--------------------------------------------
     //Style de l'image
     //--------------------------------------------
     & .img {
-      width: 110%;
+      width: 100%;
+      min-height: 400px;
+    }
+
+    & .deplacement {
       position: relative;
-      left: -10px;
-      top: -10px;
+      bottom: 5px;
     }
   }
 

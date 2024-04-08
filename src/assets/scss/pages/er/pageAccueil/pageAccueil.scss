@@ -1,0 +1,18 @@
+.pageEly {
+  // max-width: 2000px;
+  max-width: 1500px;
+  margin: 0 auto;
+  background-color: #fffef9;
+
+  .conteneur-image {
+    transition: scale 0.5s;
+  }
+  .conteneur-image:hover {
+    scale: 1.1;
+    cursor: url("/assets/img/curseur.svg"), auto;
+  }
+}
+
+// body {
+//   background-color: #000;
+// }

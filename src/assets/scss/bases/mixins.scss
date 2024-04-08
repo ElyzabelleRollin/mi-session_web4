@@ -3,26 +3,26 @@
 //Élyzabelle Rollin
 //1720870
 
-@mixin setFlex($direction, $justify, $align){
-    display: flex;
-    flex-direction: $direction;
-    justify-content: $justify;
-    align-items: $align;
+@mixin setFlex($direction, $justify, $align) {
+  display: flex;
+  flex-direction: $direction;
+  justify-content: $justify;
+  align-items: $align;
 }
 
 @mixin debug {
-    border : 5px red solid;
+  border: 5px red solid;
 }
 
-@mixin breakpoint-min($screen){
-    @media (min-width: #{$screen}px){
-        @content;
-    }
- }
+@mixin breakpoint-min($screen) {
+  @media (min-width: #{$screen}px) {
+    @content;
+  }
+}
 
-@mixin resetBox{
-    padding : 0;
-    margin: 0;
+@mixin resetBox {
+  padding: 0;
+  margin: 0;
 }
 
 //Style général mobile
@@ -30,34 +30,50 @@
 //Élyzabelle Rollin
 //1720870
 
-@mixin marginSectionMobile{
-    margin-top: 150px;
+@mixin marginSectionMobile {
+  margin-top: 150px;
 }
 
-@mixin marginEnfantMobile{
-    padding-top: 25px;
+@mixin marginEnfantMobile {
+  padding-top: 25px;
 }
 
-@mixin marginSousElementMobile{
-    padding-top: 100px;
+@mixin marginSousElementMobile {
+  padding-bottom: 100px;
 }
 
-@mixin marginMobile{
-    margin-left: 20px;
-    margin-right: 20px;
+@mixin marginMobile {
+  margin-left: 20px;
+  margin-right: 20px;
 }
 
-@mixin marginTopTexte{
-    padding-top: 1em;
+@mixin marginTopTexte {
+  padding-top: 1em;
 }
 
+//----------------------------------------------
 //Style général tablette
 //----------------------------------------------
-//Élyzabelle Rollin
-//1720870
 
+@mixin marginSectionTablette {
+  margin-top: 200px;
+}
 
+@mixin marginEnfantTablette {
+  padding-top: 25px;
+}
+
+@mixin marginSousElementTablette {
+  padding-bottom: 100px;
+}
+
+@mixin marginTablette {
+  margin-left: 20px;
+  margin-right: 20px;
+}
+//----------------------------------------------
 //Style général desktop
 //----------------------------------------------
-//Élyzabelle Rollin
-//1720870
+@mixin marginSectionDesktop {
+  margin-top: 250px;
+}
