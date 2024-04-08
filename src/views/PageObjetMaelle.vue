@@ -45,22 +45,16 @@
         <p class="nom-oeuvre-maelle" v-text="data.detailItem.title"></p>
 
       <div class="info-type-maelle info">
-        <div class="contour">
           <p class="type-oeuvre" >Type : {{ data.detailItem.worktypes[0].worktype }}</p>
-        </div>
       </div>
 
       <div class="info-annee-maelle info">
-        <div class="contour">
           <p class="annee-oeuvre" > Année : {{ data.detailItem.dated}}:</p>
-        </div>
       </div>
 
       <div class="info-periode-maelle info">
-        <div class="contour">
           <p class="periode-oeuvre" v-if="data.detailItem.period"> Période : {{ data.detailItem.period }}</p>
           <p class="periode-oeuvre" v-else>Aucune période précise</p>
-        </div>
       </div>
 
       <div class="img-detail-maelle">
@@ -68,7 +62,7 @@
       </div>
 
       <div class="info-dimension-maelle">
-        <p class="dimension-oeuvre" v-text="data.detailItem.dimensions"></p>
+        <p class="dimension-oeuvre" >Dimension: {{ data.detailItem.dimensions }}</p>
       </div>
 
       <div class="info-description-maelle">

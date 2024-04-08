@@ -36,12 +36,12 @@ div.liste-items01, div.liste-items02, div.liste-items03{
         overflow-x: auto;
         -webkit-overflow-scrolling: touch;
         .e-resize {cursor: e-resize;}
-        &::-webkit-scrollbar {
-        }
-        &::-webkit-scrollbar-track {
-        }
-        &::-webkit-scrollbar-thumb {
-        }
+        // &::-webkit-scrollbar-track {
+        //     background-color: #a5a68f;
+        // }
+        // &::-webkit-scrollbar-thumb {
+        //     background-color: #d9b2a9;
+        // }
     }
 }
 @include breakpoint-min(1400){
