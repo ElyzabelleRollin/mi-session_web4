@@ -151,10 +151,76 @@ main.detail-maelle {
         }
     }
 }
+    // - - - - - - - - - - - - - - - - - - - - - - - - - - -
+    // Breakpoint 992px structure description
+    // - - - - - - - - - - - - - - - - - - - - - - - - - - -
+    @include breakpoint-min(992){
+        .info-description-maelle {
+            & div.contour-description{
+                position: absolute;
+                top: 20%;
+                left: 9%;
+                padding: 4rem 6.5rem;
+                border: 2px solid #6E6F5E;
+            }
+            & p.description{
+                top: 25%;
+                left: 11%;
+                padding: 3rem 8rem 3rem 1rem;
+            }
+            & p.description-oeuvre{
+                text-align: end;
+                width: 60%;
+                margin: 3rem auto;
+                padding: 2rem 2rem 2rem 15rem;
+                clip-path: polygon(
+                    0 100%,
+                    40% 0%,
+                    40% 0,
+                    100% 0%,
+                    100% 100%,
+                    100% 100%,
+                    100% 100%,
+                    0% 100%,
+                    0% 0%
+                );
+            }
+            & p.sans-description-oeuvre{
+                margin-top: 6rem;
+            }
+        }
+    }
+
 // - - - - - - - - - - - - - - - - - - - - - - - - - - -
 // Breakpoint 768px structure info
 // - - - - - - - - - - - - - - - - - - - - - - - - - - -
 @include breakpoint-min(768){
+    p{
+        margin: 0;
+    }
+    div.info{
+        @include resetBox;
+        position: absolute;
+        width: 25%;
+        top: 20%;
+        left: 3%;
+        border: #6E6F5E solid 2px;
+        padding: 1rem;
+    }
+    div.info-annee-maelle{
+        position: absolute;
+        top: 30%;
+        left: 72.5%;
+    }
+    div.info-periode-maelle{
+        top: 45%;
+    }
+}
+
+// - - - - - - - - - - - - - - - - - - - - - - - - - - -
+// Breakpoint 992px structure info
+// - - - - - - - - - - - - - - - - - - - - - - - - - - -
+@include breakpoint-min(992){
     p{
         margin: 0;
     }
