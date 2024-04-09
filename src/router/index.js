@@ -8,11 +8,20 @@ const router = createRouter({
       name: "index",
       component: () => import("@/views/PageIndex.vue"),
     },
+
+    //----- charles
     {
-      path: "/pageaccueilcharles",
-      name: "pageaccueilcharles",
-      component: () => import("@/views/PageAccueilCharles.vue"),
+      path: "/pageexpoeharles",
+      name: "pageexpocharles.list",
+      component: () => import("@/views/PageExpositionCharles.vue"),
     },
+    {
+      path: "/pagedescharles/:id",
+      name: "pagedescharles.details",
+      component: () => import("@/views/PageOeuvreCharles.vue"),
+    },
+    //-------
+
     {
       path: "/pageaccueilely",
       name: "pageaccueilely",
@@ -27,11 +36,6 @@ const router = createRouter({
       path: "/pageaccueilmaelle",
       name: "pageaccueilmaelle",
       component: () => import("@/views/PageAccueilMaelle.vue"),
-    },
-    {
-      path: "/pageobjetcharles",
-      name: "pageobjetcharles",
-      component: () => import("@/views/PageObjetCharles.vue"),
     },
     {
       path: "/pageobjetely",

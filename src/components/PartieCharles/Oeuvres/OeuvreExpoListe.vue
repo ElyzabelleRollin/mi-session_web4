@@ -1,8 +1,9 @@
+
 <script setup>
-  import OeuvrePage from "../components/PartieCharles/Oeuvres/OeuvrePage.vue";
+  import OeuvreExpo from "@/components/PartieCharles/Oeuvres/OeuvreExpo.vue";
   import axios from "axios"
   import { ref, onBeforeMount} from "vue" 
-  const oeuvresId = [202537, 188168, 315544, 315498, 315532, 19278];
+  const oeuvresId = [ 202806 , 202752, 202794 , 202754, 70470 , 19278];
   const oeuvres = ref([]);
   const apiKey = "1efb8d2e-f0fd-45d5-9cf2-a357c905cf75";
 
@@ -17,20 +18,18 @@
         })
 
         .catch(error => {
-        console.error(error);
-      });
+            console.error(error);
+        });
     }
 
   });
-
-  
 </script>
+
 <template>
-  <div class="interface">
-    <main>
-        <OeuvrePage v-for="oeuvre in oeuvres" :key="oeuvre.id" :item="oeuvre"/>
-    </main>
-  </div>
+    <div class="expositionC">
+        <OeuvreExpo v-for="oeuvre in oeuvres" :key="oeuvre.id" :item="oeuvre"/>
+    </div>
 </template>
 
-<style></style>
+<style>
+</style>
