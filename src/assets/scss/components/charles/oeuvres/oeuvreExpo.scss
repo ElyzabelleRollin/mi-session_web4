@@ -3,11 +3,22 @@
 //----------------
 div.expositionC{
     @include setFlex(column, center,center);
+
+    @include breakpoint-min(1200){
+        flex-direction: row;
+        flex-wrap: wrap
+
+    }
+
     & div.oeuvreExpoC{
         @include setFlex(column, center,center);
         position: relative;
         height: 70%;
         width: 85%;
+
+        @include breakpoint-min(1200){
+            width: 35%;
+        }
     }    
 }
 
@@ -53,20 +64,36 @@ div.oeuvreExpoC{
 
         @include setFlex(column, center,center);
         position: absolute;
-        top: 32%;
-        right: 15%;
+        top: 30%;
+        right: -6%;
 
         rotate: (90deg);
 
         @include breakpoint-min(576){
-            top: 110px;
+            top: 32%;
             right: 4%;
         }
 
         @include breakpoint-min(768){
-            top: 25%;
-            right: -5%;
+            top: 30%;
+            right: 12%;
         }
+
+        @include breakpoint-min(992){
+            top: 30%;
+            right: 18%;
+        }
+
+        @include breakpoint-min(1200){
+            top: 32%;
+            right: 5%;
+        }
+        @include breakpoint-min(1400){
+            top: 25%;
+            right: 15%;
+        }
+
+        
         
         & h2{
 

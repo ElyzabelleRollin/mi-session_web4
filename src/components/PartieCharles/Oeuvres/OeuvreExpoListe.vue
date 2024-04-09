@@ -3,7 +3,7 @@
   import OeuvreExpo from "@/components/PartieCharles/Oeuvres/OeuvreExpo.vue";
   import axios from "axios"
   import { ref, onBeforeMount} from "vue" 
-  const oeuvresId = [ 202806 , 202752, 202794 , 202754, 70470 , 19278];
+  const oeuvresId = [ 303422 , 169024, 319281 , 202768, 319272 , 19278];
   const oeuvres = ref([]);
   const apiKey = "1efb8d2e-f0fd-45d5-9cf2-a357c905cf75";
 

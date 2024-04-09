@@ -39,22 +39,27 @@
         <div class="oeuvreImgDetail">
             <img :src="data.oeuvre.images[0].baseimageurl" :alt="data.oeuvre.title">
         </div>
-
+        
         <div class="oeuvreDesDetail">
+
           <p class="titreDesC">Description</p>
           <p class="desC"> {{ data.oeuvre.description }} </p>
-          <p class="titreDesC">credit</p>
-          <p class="desC"> {{ data.oeuvre.creditline }} </p>
-          <p class="titreDesC">date</p>
+
+          <p class="titreDesC">Date de creation</p>
           <p class="desC"> {{ data.oeuvre.dated }} </p>
-        
-        </div>
 
+          <p class="titreDesC">Origin</p>
+          <p class="desC"> {{ data.oeuvre.culture }} </p>   
 
-        <div class="btnRtrn">
-          <RouterLink to="/pageexpoeharles"> Retour </RouterLink>
+          <p class="titreDesC">Period</p>
+          <p class="desC"> {{ data.oeuvre.period }} </p>    
+
         </div>
-  </div>
+      </div>
+      <div class="btnRtrn">
+        <RouterLink to="/pageexpoeharles"> Retour </RouterLink>
+      </div>
+      <div class="backgroundLine"></div>
     </main>
   </div>
 </template>
