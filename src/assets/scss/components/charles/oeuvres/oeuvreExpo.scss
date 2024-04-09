@@ -1,0 +1,93 @@
+//----------------
+//oeuvre
+//----------------
+div.expositionC{
+    @include setFlex(column, center,center);
+    & div.oeuvreExpoC{
+        @include setFlex(column, center,center);
+        position: relative;
+        height: 70%;
+        width: 85%;
+    }    
+}
+
+
+
+//----------------
+//img
+//----------------
+div.oeuvreExpoC{
+    margin: 78px 32px;
+    & div.imgOeuvreC{
+        
+        & img{
+            width: 65%;
+        }
+    }
+}
+
+
+//----------------
+//backdrop
+//----------------
+div.oeuvreExpoC{
+    & div.backdropOeuvreC{
+        position: absolute;
+        right: 8px;
+        top: -24px;
+
+        z-index: -1;
+
+        width: 75%;
+        height: 100%;
+        background-color: rgb(121, 118, 128);
+    }
+}
+
+
+//----------------
+//titre
+//----------------
+div.oeuvreExpoC{
+    & div.titreOeuvreC{
+
+        @include setFlex(column, center,center);
+        position: absolute;
+        top: 32%;
+        right: 15%;
+
+        rotate: (90deg);
+
+        @include breakpoint-min(576){
+            top: 110px;
+            right: 4%;
+        }
+
+        @include breakpoint-min(768){
+            top: 25%;
+            right: -5%;
+        }
+        
+        & h2{
+
+            font-family: "Kaushan Script", cursive;
+            font-size: 30px;
+            
+            width: 300px;
+            
+            padding: 12px;
+
+            color: rgb(32, 31, 36);
+            background-color: rgb(157, 151, 168);
+            
+            @include breakpoint-min(576){
+               
+            }
+
+            @include breakpoint-min(768){
+                width: 300px;
+                font-size: 32px;
+            }
+        }
+    }
+}
