@@ -7,7 +7,7 @@
     <main>
       <div class="titre-maelle">
             <img src="/public/assets/img/logo/logo-maelle01.svg" alt="logo" class="logo">
-            <h2>Arsenal du Temps</h2>
+            <h2>Arma Antiqua</h2>
       </div>
       <div class="accueil">
         <div class="ligne-temps">

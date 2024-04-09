@@ -40,7 +40,7 @@
     <main class="detail-maelle">
       <div class="titre">
       <img src="/public/assets/img/logo/logo-maelle01.svg" alt="logo" class="logo">
-        <h2>Arsenal du temps</h2>
+        <h2>Arma Antiqua</h2>
       </div>
         <p class="nom-oeuvre-maelle" v-text="data.detailItem.title"></p>
 
