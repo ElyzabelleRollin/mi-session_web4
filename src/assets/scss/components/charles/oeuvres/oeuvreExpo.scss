@@ -4,7 +4,7 @@
 div.expositionC{
     @include setFlex(column, center,center);
 
-    @include breakpoint-min(1200){
+    @include breakpoint-min(1400){
         flex-direction: row;
         flex-wrap: wrap
 

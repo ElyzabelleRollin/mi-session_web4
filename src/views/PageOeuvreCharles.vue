@@ -27,7 +27,6 @@
         console.error(error);
       })
   });
-  
 </script>
 <template>
   <div class="interface">
