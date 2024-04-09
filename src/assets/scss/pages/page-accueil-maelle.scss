@@ -17,29 +17,22 @@ div.interface-maelle{
 
     & div.titre-maelle{
         background-color: #f4eeed;
+        @include setFlex(row, center, center);
+        @include resetBox;
         & h2{
             @include resetBox;
             padding-top: 1rem ;
             font-family: 'Handmade';
-            font-size: 3rem;
+            font-size: 2rem;
             font-weight: bold;
             text-align: center;
         }
-    }
-
-    @include breakpoint-min(576px){
-       div.interface-maelle{
-            width: 80%;
-            
-       }
-       & h2{
-        font-size: 8rem;
-       }
-    }
-    @include breakpoint-min(1200px){
-       & h2{
-        font-size: 12rem;
-       }
+        & .logo{
+            @include resetBox;
+            margin-top: 16px;
+            width: 15%;
+            height: 10vh;
+        }
     }
 
 }
