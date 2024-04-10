@@ -83,6 +83,10 @@ div.logo{
     left: 0;
 
     z-index: 16;
+
+    & img{
+        
+    }
  
 }
 
@@ -122,7 +126,7 @@ div.logoContainer{
 
     @include breakpoint-min(1200){
         right: 0;
-        width: 1000px;
+        width: 800px;
         height: 100%;
 
         clip-path: polygon(
@@ -131,6 +135,11 @@ div.logoContainer{
             100% 0,
             0 120%
         );
+    }
+
+    @include breakpoint-min(1400){
+        width: 1000px;
+
     }
 
 
@@ -203,7 +212,7 @@ div.titreSectionFooter{
             width: 132px;
         }
 
-        @include breakpoint-min(1200){
+        @include breakpoint-min(1300){
             width: 140px;
         }
 
