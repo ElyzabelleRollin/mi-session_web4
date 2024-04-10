@@ -65,7 +65,7 @@ import "bootstrap/dist/js/bootstrap.bundle.min.js";
               <span class="deco apres"></span>
             </div>
             <p class="d-none d-md-block">
-              Some representative placeholder content for the second slide.
+              Plongez dans la richesse artistique de la peinture à l'encre asiatique à travers une exposition captivante mettant en avant l'évolution de cette technique emblématique du XXe siècle.
             </p>
           </div>
         </div>
