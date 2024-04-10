@@ -33,7 +33,7 @@
       </div>
 
       <div class="logo">
-          <img class="imglogo" src="../../../assets/img/svg/" alt="logo">
+          <img class="imglogo" src="../../../assets/img/svg/Fichier 6logo.svg" alt="logo">
       </div>
       
       <div class="logoContainer"></div>

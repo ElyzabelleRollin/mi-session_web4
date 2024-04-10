@@ -81,11 +81,38 @@ div.logo{
     position: absolute;
     top: 0;
     left: 0;
+    margin: 30px;
 
     z-index: 16;
 
+    @include breakpoint-min(768){
+        margin: 78px 64px;
+    }
+
+    @include breakpoint-min(1200){
+        margin: 90px 78px;
+    }
+
+    @include breakpoint-min(1400){
+        margin: 120px 90px;
+    }
+
+
     & img{
         
+        width: 100px;
+
+        @include breakpoint-min(768){
+            width: 220px;
+        }
+
+        @include breakpoint-min(1200){
+            width: 275px;
+        }
+
+        @include breakpoint-min(1400){
+            width: 380px;
+        }
     }
  
 }
@@ -99,7 +126,7 @@ div.logoContainer{
     height: 150px;
     width: 100%;
     z-index: 12;
-    background-color: rgb(180, 180, 180);
+    background-color: rgb(173, 173, 173);
 
     clip-path: polygon(
         0 0,
