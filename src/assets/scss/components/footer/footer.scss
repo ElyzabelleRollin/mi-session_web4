@@ -18,18 +18,58 @@ footer{
     width: 100%;
 
     padding: 120px 24px 24px;
-    background-color: rgb(71, 71, 71);
+    background-image: url("/src/assets/img/jpg/exhibition-8431913_1280.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    @include breakpoint-min(768){
+        padding: 120px 48px 48px;
+    }
+
+    &::after {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: rgb(37, 37, 37, 0.7);
+    }
+    
     
 
     & p{
+
         font-size: .7em;
         color: #b4b4b4;
         text-align: end;
+
+        z-index: 10;
+
+        @include breakpoint-min(768){
+            font-size: 1.2em;
+        }
+
+        @include breakpoint-min(1200){
+            font-size: 1.6em;
+        }
+
+        &.copyright{
+            margin-top: 64px;
+
+            font-size: .8em;
+
+            @include breakpoint-min(768){
+                font-size: 1.3em;
+            }
+
+            @include breakpoint-min(1200){
+                font-size: 1.7em;
+            }
+    
+        }
     }
-    & h3{
-    font-size: 1.7em;
-       color: #fff; 
-    }
+
 }
 
 
@@ -43,22 +83,19 @@ div.logo{
     left: 0;
 
     z-index: 16;
-
-    & img{
-        
-    }
-    
+ 
 }
+
+
 div.logoContainer{
 
     position: absolute;
     top: 0;
-    left: 0;
     
     height: 150px;
     width: 100%;
     z-index: 12;
-    background-color: rgb(194, 194, 194);
+    background-color: rgb(180, 180, 180);
 
     clip-path: polygon(
         0 0,
@@ -66,11 +103,38 @@ div.logoContainer{
         100% 0%,
         0 100%
     );
+    @include breakpoint-min(0){
+        left: 0;
+    }
+
+    @include breakpoint-min(768){
+        right: 0;
+        width: 500px;
+        height: 100%;
+
+        clip-path: polygon(
+            0 0,
+            100% 0,
+            100% 0,
+            0 100%
+        );
+    }
+
+    @include breakpoint-min(1200){
+        right: 0;
+        width: 1000px;
+        height: 100%;
+
+        clip-path: polygon(
+            0 0,
+            100% 0,
+            100% 0,
+            0 120%
+        );
+    }
 
 
 }
-
-
 
 
 //-------------------
@@ -78,11 +142,27 @@ div.logoContainer{
 //-------------------
 div.sivezNous{
     @include setFlex(column, flex-end, end);
+    margin-bottom: 32px;
+    z-index: 10;
     & div.icons{
         @include setFlex(row, flex-end, center);
-        & img{
+        & img.iconsFooter{
             height: 24px;
             margin-left: 16px;
+
+            filter: invert(70%);
+
+            @include breakpoint-min(768){
+                height: 30px;
+            }
+
+            @include breakpoint-min(1200){
+                height: 34px;
+            }
+
+            &:hover{
+                filter: invert(90%);
+            }
         }
     }
 }
@@ -93,8 +173,8 @@ div.sivezNous{
 //-------------------
 div.aPropos{
     @include setFlex(column, flex-end, end);
+    z-index: 10;
 }
-
 
 
 //-------------------
@@ -102,4 +182,52 @@ div.aPropos{
 //-------------------
 div.footerContainer{
     @include setFlex(column, flex-end, end);
+}
+
+
+//-------------------
+//titre section
+//-------------------
+div.titreSectionFooter{
+    @include setFlex(row, center, center);
+
+    & div.borderFooterSection{
+        width: 73px;
+        height: 2px;
+
+        margin-right: 16px;
+
+        background-color: #fff;
+
+        @include breakpoint-min(768){
+            width: 132px;
+        }
+
+        @include breakpoint-min(1200){
+            width: 140px;
+        }
+
+        @include breakpoint-min(1400){
+            width: 200px;
+        }
+
+        @include breakpoint-min(1600){
+            width: 300px;
+        }
+    }
+
+    & h3{
+        font-size: 1.7em;
+        color: #fff; 
+
+        margin-bottom: 16px;
+
+        @include breakpoint-min(768){
+            font-size: 2.3em;
+        }
+
+        @include breakpoint-min(1200){
+            font-size: 2.7em;
+        }
+    }
 }
