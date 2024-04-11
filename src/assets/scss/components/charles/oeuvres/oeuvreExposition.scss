@@ -1,0 +1,74 @@
+//Charles Corey
+//2160879
+//-----------------------------------------------
+
+
+
+//-----------------
+//container d'oeuvres
+//-----------------
+div.expositionC{
+    @include setFlex(column, center, center);
+    margin: 32px;
+
+    //----------
+    //container précis
+    //----------
+    & div.oeuvreExpoC{
+        position: relative;
+        @include setFlex(row, center, center);
+        width: 100%;
+        height: 90%;
+
+        margin-bottom: 600px;
+    }
+}
+
+
+//-----------------
+//img
+//-----------------
+div.imgOeuvreC{
+    position: absolute;
+    top: 0;
+    left: -170px;
+    & img{
+        width: 250px;
+    }
+}
+
+
+//-----------------
+//titre
+//-----------------
+div.titreOeuvreC{
+    position: absolute;
+    top: -20px;
+    left: 50px;
+
+    
+    padding: 8px;
+
+    background-color: gray;
+    & h2{
+        height: 30%;
+        writing-mode: vertical-rl;
+    }
+}
+
+
+//-----------------
+//backdrop
+//-----------------
+div.backdropOeuvreC{
+    position: absolute;
+    top: 64px;
+    left: -110px;
+
+    height: 370px;
+    width: 280px;
+
+    z-index: -2;
+
+    background-color: rgb(209, 209, 209);
+}
