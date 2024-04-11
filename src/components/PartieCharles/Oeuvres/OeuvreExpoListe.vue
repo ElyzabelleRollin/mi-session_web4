@@ -1,3 +1,7 @@
+<!--
+Charles Corey
+2160879
+-->
 
 <script setup>
   import OeuvreExpo from "@/components/PartieCharles/Oeuvres/OeuvreExpo.vue";
