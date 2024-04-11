@@ -1,6 +1,6 @@
-//Détails des oeuvres
-//---------------------------
-
+//Charles Corey
+//2160879
+//-----------------------------------------------
 
 //--------------
 //img
@@ -16,13 +16,6 @@ div.oeuvreDetail{
     
             @include breakpoint-min(992){
                 width: 447px;
-            }
-    
-            @include breakpoint-min(1200){
-                
-            }
-            @include breakpoint-min(1400){
-                
             }
         }
     }
@@ -43,6 +36,9 @@ div.oeuvreTitreDetail{
         width: 275px;
         font-style: 39px;
         rotate: (90deg);
+
+        font-family: "BlackMatteo";
+        font-weight: 800;
 
         background-color: rgb(121, 118, 128);
         padding: 8px;
@@ -119,8 +115,11 @@ div.oeuvreDesDetail{
 
     & p.titreDesC{
         font-size: 24px;
-        font-weight: bold;
         margin-bottom: 12px;
+
+        font-family: "BlackMatteo";
+        font-weight: 800;
+
 
         @include breakpoint-min(992){
             font-size: 28px;
@@ -130,6 +129,8 @@ div.oeuvreDesDetail{
     & p.desC{
         font-size: 16px;
         margin-bottom: 24px;
+
+        font-family: "Montserrat";
 
         @include breakpoint-min(768){
             margin-bottom: 32px;

@@ -8,8 +8,6 @@ const router = createRouter({
       name: "index",
       component: () => import("@/views/PageIndex.vue"),
     },
-
-    //----- charles
     {
       path: "/pageexpoeharles",
       name: "pageexpocharles.list",
@@ -20,8 +18,6 @@ const router = createRouter({
       name: "pagedescharles.details",
       component: () => import("@/views/PageOeuvreCharles.vue"),
     },
-    //-------
-
     {
       path: "/pageaccueilely",
       name: "pageaccueilely",
