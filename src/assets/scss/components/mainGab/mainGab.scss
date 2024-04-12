@@ -1,0 +1,67 @@
+// Fiche Main
+//Gabrielle Elemond-Beaudin
+// 🥐 0566134 🥐
+//----------------------------------------------------
+.Gab {
+    background-image: url("/assets/img/cat.jpg");
+    color: blanchedalmond;
+}
+
+// 🥐
+.border {
+    display: flex;
+    justify-content: center;
+    position: relative;
+}
+// 🥐
+.flafla {
+    @include breakpoint-min(992) {
+        display: flex;
+        justify-content: center;
+        position: relative;
+    }
+
+    img {
+        display: none;
+        @include breakpoint-min(992) {
+            display: flex;
+            postition: absolute;
+            width: 20%;
+        }
+    }
+}
+.texteGab {
+    font-family: "Chopin-Light";
+    @include breakpoint-min(992) {
+        width: 35%;
+        margin: 4rem;
+    }
+    width: 100%;
+    height: min-content;
+    h1 {
+        font-size: 1em;
+    }
+    h2 {
+        font-size: 0.8em;
+    }
+    h3 {
+        font-size: 0.6em;
+    }
+}
+// 🥐
+.bouton {
+    display: flex;
+    justify-content: center;
+
+    button {
+        padding: 1em 2em;
+        margin-top: 1rem;
+        border: solid 1px blanchedalmond;
+        background-color: transparent;
+        color: blanchedalmond;
+    }
+    button:hover {
+        background-color: blanchedalmond;
+        color: black;
+    }
+}

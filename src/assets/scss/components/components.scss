@@ -1,6 +1,17 @@
-@import 'footer/footer';
-@import 'header/header';
+// Fiche Importation des SCSS
+//Gabrielle Elemond-Beaudin
+// 🥐 0566134 🥐
+//----------------------------------------------------
 
-@import 'ER/er.scss';
+@import "mainGab/mainGab";
+@import "index/index";
+@import "images/images";
+@import "logoGab/logoGab";
+@import "detailGab/detailGab";
 
-@import 'affichageAccueilMaelle/affichage-accueil-maelle';
+@import "footer/footer";
+@import "header/header";
+
+@import "ER/er.scss";
+
+@import "affichageAccueilMaelle/affichage-accueil-maelle";
