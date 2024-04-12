@@ -82,7 +82,7 @@ import "bootstrap/dist/js/bootstrap.bundle.min.js";
               <span class="deco apres"></span>
             </div>
             <p class="d-none d-md-block">
-              Some representative placeholder content for the third slide.
+              Explorez un arsenal fascinant d'armes anciennes, des épées épiques aux armures légendaires, et découvrez les secrets de leur fabrication et de leur utilisation. Une immersion captivante dans le passé martial qui vous laissera émerveillé par l'ingéniosité et la puissance des civilisations disparues.
             </p>
           </div>
         </div>
