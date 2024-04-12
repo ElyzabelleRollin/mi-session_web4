@@ -3,7 +3,6 @@ import axios from "axios";
 import { ref, onBeforeMount } from "vue";
 import gabImage from "../components/gab/gabImage.vue";
 import gabLogo from "../components/gab/gabLogo.vue";
-// import { RouterLink } from "vue-router";
 const url = "https://api.harvardartmuseums.org/object/";
 const apiKEY = "?apikey=ebb8cc4d-08b7-437c-9781-0a0f895a6d6a";
 
