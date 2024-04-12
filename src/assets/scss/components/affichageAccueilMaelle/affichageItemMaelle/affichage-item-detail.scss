@@ -1,0 +1,246 @@
+// Style de structure générale page detail Maelle
+//----------------------------------------------------
+
+// - - - - - - - - - - - - - - - - - - - - - - - - - - -
+// Structure
+// - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+main.detail-maelle {
+    @include setFlex(row, start, center);
+    @include resetBox;
+    position: relative;
+    width: 100%;   
+    text-align: center;
+    background-color: #f4eeed;
+    & div.titre{
+        @include setFlex(row, center, center);
+        @include resetBox;
+        width: 100%;
+        & h2 {
+            @include resetBox;
+            font-family: 'Handmade';
+            padding-top: 1rem ;
+            font-size: 2rem;
+            font-weight: 300;
+        }
+        & .logo{
+            @include resetBox;
+            padding: 1rem;
+            width: 18%;
+            height: 10vh;
+        }
+    }
+    
+    & .nom-oeuvre-maelle {
+        @include resetBox;
+        padding: 1.5rem 1rem 1rem;
+        font-size: 1.5rem;
+        font-weight: bold;
+    }
+    & .info-type-maelle {
+        text-transform: capitalize;
+    }
+    & .info-annee-maelle {
+        text-transform: capitalize;
+    }
+    & .info-periode-maelle {
+        text-transform: capitalize;
+    }
+    & .img-detail-maelle {
+
+        & img{
+            width: 100%;
+            height: 45vh;
+            object-fit: contain;
+        }
+    }
+    & .info-dimension-maelle {
+        padding-top: 1rem;
+    }
+    & .info-description-maelle {
+        position: relative;
+        
+        & p.description{
+            position: absolute;
+            top: 3%;
+            left: 20%;
+            padding: 1rem 3rem 3rem;
+            font-family: 'Handmade';
+            font-weight: bold;
+            font-size: 1.3rem;
+            font-weight: 500;
+            background-color: #D7D9BB;
+        }
+        & p.description-oeuvre{
+            width: 100%;
+            margin-top: 3rem;
+            padding: 4rem 1rem 2rem;
+            background-color: #a5a68f;
+            clip-path: polygon(
+                0 15%,
+                100% 0,
+                0% 0,
+                100% 0%,
+                100% 90%,
+                100% 100%,
+                0% 100%,
+                0% 90%,
+                0% 10%
+            );
+        }
+    }
+    & .link {
+        font-family: 'Handmade';
+        padding-bottom: 1rem;
+        color: #6E6F5E;
+        &:hover {
+            font-weight: 500;
+            font-style: italic;
+            color: #090909;
+        }
+    }
+
+// - - - - - - - - - - - - - - - - - - - - - - - - - - -
+// Breakpoint 768px structure description
+// - - - - - - - - - - - - - - - - - - - - - - - - - - -
+    @include breakpoint-min(768){
+        
+        div.img-detail-maelle {
+            & img{
+                margin: 2rem auto 0;
+                width: 50%;
+                height: 40vh;
+            }  
+        }
+        
+        .info-description-maelle {
+            text-align: center;
+            margin: 0 auto;
+            & div.contour-description{
+                position: absolute;
+                top: 20%;
+                left: 9%;
+                padding: 4rem 6.5rem;
+                border: 2px solid #6E6F5E;
+            }
+            & p.description{
+                top: 25%;
+                left: 11%;
+                padding: 3rem 6rem 3rem 1rem;
+            }
+            & p.description-oeuvre{
+                text-align: end;
+                width: 90%;
+                min-height: 255px;
+                margin: 3rem auto;
+                padding: 2rem 2rem 2rem 15rem;
+                clip-path: polygon(
+                    0 100%,
+                    40% 0%,
+                    40% 0,
+                    100% 0%,
+                    100% 100%,
+                    100% 100%,
+                    100% 100%,
+                    0% 100%,
+                    0% 0%
+                )
+            }
+            & p.sans-description-oeuvre{
+                margin-top: 6rem;
+            }
+        }
+    }
+    // - - - - - - - - - - - - - - - - - - - - - - - - - - -
+    // Breakpoint 992px structure description
+    // - - - - - - - - - - - - - - - - - - - - - - - - - - -
+    @include breakpoint-min(992){
+        .info-description-maelle {
+            & div.contour-description{
+                position: absolute;
+                top: 20%;
+                left: 9%;
+                padding: 4rem 8rem;
+                border: 2px solid #6E6F5E;
+            }
+            & p.description{
+                padding: 3rem 8rem 3rem 2rem;
+            }
+            & p.description-oeuvre{
+                padding: 2rem 2rem 2rem 20rem;
+                min-height: 230px;
+            }
+            & p.sans-description-oeuvre{
+                margin-top: 6rem;
+            }
+        }
+    }
+    // - - - - - - - - - - - - - - - - - - - - - - - - - - -
+    // Breakpoint 1200px structure description
+    // - - - - - - - - - - - - - - - - - - - - - - - - - - -
+    
+    @include breakpoint-min(1200){
+        & div.info-description-maelle{
+            & div.contour-description{
+                top: 25%;
+                left: 9%;
+                padding: 4rem 8.5rem;
+            }
+            & p.description{
+                top: 30%;
+                left: 11%;
+                padding: 3rem 12rem 3rem 1rem;
+            }
+            & p.description-oeuvre{
+                padding: 2rem 2rem 2rem 25rem;
+            }
+        }
+    }
+    // - - - - - - - - - - - - - - - - - - - - - - - - - - -
+    // Breakpoint 1400px structure description
+    // - - - - - - - - - - - - - - - - - - - - - - - - - - -
+    
+    @include breakpoint-min(1400){
+        & div.info-description-maelle{
+            & div.contour-description{
+                padding: 4rem 10rem;
+            }
+            & p.description{
+                padding: 3rem 12rem 3rem 2rem;
+            }
+            & p.description-oeuvre{
+                padding: 2rem 2rem 2rem 30rem;
+            }
+        }
+    }
+    // - - - - - - - - - - - - - - - - - - - - - - - - - - -
+    // Breakpoint 768px structure info
+    // - - - - - - - - - - - - - - - - - - - - - - - - - - -
+    @include breakpoint-min(768){
+        p{
+            margin: 0;
+        }
+        div.info{
+            @include resetBox;
+            position: absolute;
+            width: 20%;
+            top: 20%;
+            left: 3%;
+            border: #6E6F5E solid 2px;
+            padding: 1rem 0.5rem;
+        }
+        
+        div.info-annee-maelle{
+            position: absolute;
+            top: 30%;
+            left: 77%;
+        }
+        div.info-periode-maelle{
+            top: 45%;
+        }
+    }
+    
+}
+    
+
+
