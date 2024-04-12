@@ -40,7 +40,7 @@ onBeforeMount(() => {
           <h2>artiste: {{ oeuvreUnique.people[0]["name"] }}</h2>
           <h2>provenance: {{ oeuvreUnique.culture }}</h2>
           <h2>année: {{ oeuvreUnique.dated }}</h2>
-          <p>{{ oeuvreUnique.id }}</p>
+
           <div class="bouton">
             <button>
               <RouterLink :to="{ name: 'pageobjetgab', params: { id: oeuvreUnique.id } }"
