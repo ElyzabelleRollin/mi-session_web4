@@ -35,11 +35,12 @@ onBeforeMount(() => {
           <img src="../../../src/assets/img/motif.svg" alt="" />
         </div>
 
-        <div class="texte">
+        <div class="texteGab">
           <h1>titre: {{ oeuvreUnique.title }}</h1>
           <h2>artiste: {{ oeuvreUnique.people[0]["name"] }}</h2>
           <h2>provenance: {{ oeuvreUnique.culture }}</h2>
           <h2>année: {{ oeuvreUnique.dated }}</h2>
+          <p>{{ oeuvreUnique.id }}</p>
           <div class="bouton">
             <button>
               <RouterLink :to="{ name: 'pageobjetgab', params: { id: oeuvreUnique.id } }"

@@ -39,7 +39,7 @@ const router = createRouter({
       component: () => import("@/views/PageObjetEly.vue"),
     },
     {
-      path: "/pageobjetgab",
+      path: "/pageobjetgab/:id",
       name: "pageobjetgab",
       component: () => import("@/views/PageObjetGab.vue"),
     },

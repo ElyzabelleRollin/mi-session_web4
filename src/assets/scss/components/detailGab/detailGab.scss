@@ -1,0 +1,48 @@
+.conteneurDetail {
+    position: relative;
+    width: 70vw;
+    @include setFlex(column, center, center);
+    @include breakpoint-min(992) {
+        @include setFlex(row, center, center);
+        width: 90vw;
+    }
+    padding: 2em;
+    margin: 2rem;
+    border: solid 1px blanchedalmond;
+    .cadre {
+        position: relative;
+        width: 100%;
+        @include setFlex(column, center, center);
+    }
+    .coins {
+        width: 100%;
+    }
+    .imageAnge {
+        position: absolute;
+        width: 90%;
+        height: 90%;
+    }
+    .texteGab {
+        @include breakpoint-min(992) {
+            width: 100%;
+            padding-left: 6em;
+        }
+        h1 {
+            @include breakpoint-min(992) {
+                position: absolute;
+                height: 60vh;
+                top: 0;
+                left: 0;
+                transform: translate(40vw, 10%);
+                width: max-content;
+                font-size: 1.7em;
+                writing-mode: vertical-rl;
+            }
+        }
+    }
+    .flafla {
+        @include breakpoint-min(992) {
+            display: none;
+        }
+    }
+}

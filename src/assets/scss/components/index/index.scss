@@ -32,6 +32,9 @@
             font-size: 0.75em;
         }
     }
+    .liensIndex {
+        @include setFlex(column, center, center);
+    }
     div.deco {
         display: flex;
         justify-content: end;
