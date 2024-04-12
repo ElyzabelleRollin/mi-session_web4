@@ -3,7 +3,7 @@
   <div class="interface">
     <main>
       <div class="image">
-        <img src="../../../src/assets/img/motifH.svg" alt="yo" class="motif" />
+        <img src="/assets/img/motifH.svg" alt="yo" class="motif" />
       </div>
     </main>
   </div>

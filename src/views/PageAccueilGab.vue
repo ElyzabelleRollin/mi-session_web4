@@ -25,14 +25,15 @@ onBeforeMount(() => {
     <gabLogo />
     <gabImage />
     <main>
-      <div class="conteneur" v-for="oeuvreUnique in data.oeuvres" :key="oeuvreUnique.id">
+      <div
+        class="conteneurImages"
+        v-for="oeuvreUnique in data.oeuvres"
+        :key="oeuvreUnique.id"
+      >
         <div class="cadre">
-          <img src="../assets/img/coins.svg" class="coins" />
-          <img :src="oeuvreUnique.primaryimageurl" alt="yo" class="imageAnge" />
-        </div>
-
-        <div class="flafla">
-          <img src="../../../src/assets/img/motif.svg" alt="" />
+          <img src="/assets/img/coins.svg" class="coins" />
+          <img :src="oeuvreUnique.primaryimageurl" alt="imageAnge" class="imageAnge" />
+          <div class="transparence"></div>
         </div>
 
         <div class="texteGab">

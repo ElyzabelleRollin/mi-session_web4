@@ -23,12 +23,12 @@ onBeforeMount(() => {
     <main>
       <div class="conteneurDetail">
         <div class="cadre">
-          <img src="../../assets/img/coins.svg" class="coins" />
+          <img src="/assets/img/coins.svg" class="coins" />
           <img :src="data.oeuvreUnique.primaryimageurl" alt="yo" class="imageAnge" />
         </div>
         <!-- 🥐 -->
         <div class="flafla">
-          <img src="../../../src/assets/img/motif.svg" alt="" />
+          <img src="/assets/img/motif.svg" alt="" />
         </div>
         <!-- 🥐 -->
         <div class="texteGab">
