@@ -17,16 +17,15 @@ const cleAPI = "apikey=7c4a3a17-da3e-4661-91fe-602f96ff8a28";
 onBeforeMount(() => {
   axios.get(url + type + routeId.value + "?" + cleAPI).then((response) => {
     data.oeuvres = response.data;
-    console.log(data.oeuvres);
   });
 });
 </script>
 
 <template>
   <div class="conteneur-details">
-    <div class="test">
+    <div class="conteneur-titre">
       <h1>{{ data.oeuvres.title }}</h1>
-      <div class="conteneur-image">
+      <div class="image">
         <img :src="data.oeuvres.primaryimageurl" :alt="data.oeuvres.title" />
       </div>
     </div>

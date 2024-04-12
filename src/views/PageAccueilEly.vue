@@ -7,8 +7,8 @@ import imgHorizontale from "@/components/ER/PageAccueil/FicheImageHorizontale.vu
 import sectionImgL from "@/components/ER/PageAccueil/SectionImgL.vue";
 import sectionImgPleine from "@/components/ER/PageAccueil/SectionImgPleine.vue";
 import SectionImgDome from "@/components/ER/PageAccueil/SectionImgDome.vue";
-// import SectionImgDomeSimple from "@/components/ER/PageAccueil/SectionImgDomeSimple.vue";
 </script>
+
 <template>
   <div class="interface pageEly">
     <main>
@@ -17,7 +17,6 @@ import SectionImgDome from "@/components/ER/PageAccueil/SectionImgDome.vue";
       <sectionImgL />
       <sectionImgPleine />
       <SectionImgDome />
-      <!-- <SectionImgDomeSimple /> -->
     </main>
   </div>
 </template>
