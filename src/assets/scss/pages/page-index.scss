@@ -1,20 +1,20 @@
-// Style de structure générale 
+// Style de structure générale
 //----------------------------------------------------
 
 // - - - - - - - - - - - - - - - - - - - - - - - - - - -
 // Structure
 // - - - - - - - - - - - - - - - - - - - - - - - - - - -
-div.structure{
-    @include setFlex(column, start, center);
-    @include resetBox;
-    position: relative;
+div.structure {
+  //   @include setFlex(column, start, center);
+  @include resetBox;
+  position: relative;
 }
 // - - - - - - - - - - - - - - - - - - - - - - - - - - -
 // Structure Main
 // - - - - - - - - - - - - - - - - - - - - - - - - - - -
-main{
-    @extend .row;
-    @include resetBox;
-    @include setFlex(column, start, center);
-    width: 100%;
+main {
+  @extend .row;
+  @include resetBox;
+  @include setFlex(column, start, center);
+  width: 100%;
 }

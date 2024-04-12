@@ -1,19 +1,21 @@
-// Style de structure de la ligne du temps Maelle
-//----------------------------------------------------
+//Style de structure de la ligne du temps
+//---------------------------------------
+//Maelle Dion
+//2258197
 
 // - - - - - - - - - - - - - - - - - - - - - - - - - - -
 // Structure ligne du temps
 // - - - - - - - - - - - - - - - - - - - - - - - - - - -
-div.ligne-temps{
-    display: none;
-    position: absolute;
-    z-index: 2;
-    top: 0;
-    left: 1%;
-    padding: 1rem .5rem 100rem ;
-    width: 1vh;
-    height:200vh;
-    border-radius: 10vh;
-    text-align: center;
-    background-color: black;
+div.ligne-temps {
+  display: none;
+  position: absolute;
+  z-index: 2;
+  top: 0;
+  left: 1%;
+  padding: 1rem 0.5rem 100rem;
+  width: 1vh;
+  height: 200vh;
+  border-radius: 10vh;
+  text-align: center;
+  background-color: black;
 }
