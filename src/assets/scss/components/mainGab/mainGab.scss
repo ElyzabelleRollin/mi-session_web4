@@ -28,8 +28,10 @@
             postition: absolute;
             width: 20%;
         }
+        
     }
 }
+
 .texteGab {
     font-family: "Chopin-Light";
     @include breakpoint-min(992) {
