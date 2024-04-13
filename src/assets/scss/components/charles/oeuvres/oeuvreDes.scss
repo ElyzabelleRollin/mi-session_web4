@@ -1,0 +1,190 @@
+//Charles Corey
+//2160879
+//-----------------------------------------------
+
+//--------------
+//img
+//--------------
+div.oeuvreDetail{
+    & div.oeuvreImgDetail{
+        & img{
+            width: 200px;
+
+            @include breakpoint-min(768){
+                width: 304px;
+            }
+    
+            @include breakpoint-min(992){
+                width: 447px;
+            }
+        }
+    }
+}
+
+
+//--------------
+//container
+//--------------
+div.oeuvreTitreDetail{
+    position: relative;
+    margin-right: 16px;
+
+    & h2{
+        position: absolute;
+        top: 100px;
+        right: -252px;
+        width: 275px;
+        font-style: 39px;
+        rotate: (90deg);
+
+        font-family: "BlackMatteo";
+        font-weight: 800;
+
+        background-color: rgb(121, 118, 128);
+        padding: 8px;
+
+        color: #dad4d4;
+
+        @include breakpoint-min(768){
+            width: 325px;
+            right: -320px;
+        }
+
+        @include breakpoint-min(992){
+            width: 500px;
+            right: -470px;
+            top: 150px;
+
+            font-size: 40px
+        }
+
+        @include breakpoint-min(1200){
+            right: -730px;
+            top: -76.5px;
+
+            max-height: 100px;
+            width: 550px;
+        }
+    }
+}
+
+//--------------
+//container
+//--------------
+div.oeuvreDetail{
+    @include setFlex(column,center, center);
+    margin: 42px;
+    position: relative;
+
+    @include breakpoint-min(768){
+        margin: 42px;
+    }
+
+    @include breakpoint-min(1200){
+        @include setFlex(row,center, center);
+    }
+}
+
+//--------------
+//des
+//--------------
+div.oeuvreDesDetail{
+    @include setFlex(column,flex-start, center);
+    text-align: center;
+
+    background-color: rgb(205, 203, 209);
+    margin: 64px 0px;
+    padding: 22px;
+
+    @include breakpoint-min(768){
+        padding: 32px;       
+    }
+
+    @include breakpoint-min(1200){
+        width: 45%;
+        height: 600px;
+
+        overflow-y: scroll;
+
+        margin-left: 64px;
+
+    }
+    @include breakpoint-min(1400){
+        
+    }
+
+    & p.titreDesC{
+        font-size: 24px;
+        margin-bottom: 12px;
+
+        font-family: "BlackMatteo";
+        font-weight: 800;
+
+
+        @include breakpoint-min(992){
+            font-size: 28px;
+        }
+    }
+
+    & p.desC{
+        font-size: 16px;
+        margin-bottom: 24px;
+
+        font-family: "Montserrat";
+
+        @include breakpoint-min(768){
+            margin-bottom: 32px;
+        }
+    }
+}
+
+
+//--------------
+//back line
+//--------------
+div.backgroundLine{
+    background-color: #e9e5e2;
+    width: 100%;
+    height: 75%;
+
+    z-index: -2;
+
+    position: absolute;
+    top: 200px;
+
+    @include breakpoint-min(768){
+        height: 175%;        
+    }
+
+    @include breakpoint-min(992){
+        height: 100%; 
+    }
+
+    @include breakpoint-min(1200){
+        height: 45%;
+        top: 300px;
+    }
+
+}
+
+
+//--------------
+//return
+//--------------
+div.btnRtrn{
+    @include setFlex(column,center, center);
+    width: 100%;
+    padding: 16px;
+    background-color: #c2ac8c;
+    margin-bottom: 24px;
+
+    //text
+    font-size: 24px;
+    font-weight: bold;
+    color: rgb(93, 91, 99);
+
+    &:hover{
+        background-color: rgb(93, 91, 99);
+        color: #c2ac8c ;
+    }
+}

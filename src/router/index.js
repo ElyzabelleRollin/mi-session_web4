@@ -9,9 +9,14 @@ const router = createRouter({
       component: () => import("@/views/PageIndex.vue"),
     },
     {
-      path: "/pageaccueilcharles",
-      name: "pageaccueilcharles",
-      component: () => import("@/views/PageAccueilCharles.vue"),
+      path: "/pageexpoeharles",
+      name: "pageexpocharles.list",
+      component: () => import("@/views/PageExpositionCharles.vue"),
+    },
+    {
+      path: "/pagedescharles/:id",
+      name: "pagedescharles.details",
+      component: () => import("@/views/PageOeuvreCharles.vue"),
     },
     {
       path: "/pageaccueilely",

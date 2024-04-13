@@ -1,0 +1,132 @@
+//Charles Corey
+//2160879
+//-----------------------------------------------
+
+
+
+//-----------------
+//container d'oeuvres
+//-----------------
+div.expositionC{
+    @include setFlex(column, center, center);
+    margin: 32px;
+    
+
+    //----------
+    //container précis
+    //----------
+    & div.oeuvreExpoC{
+        position: relative;
+        @include setFlex(row, center, center);
+        width: 100%;
+        height: 90%;
+
+        margin-bottom: 600px;
+
+        @include breakpoint-min(1200){
+            margin-bottom: 800px;
+
+        }
+        @include breakpoint-min(1600){
+            margin-bottom: 1200px;
+        }
+    }
+}
+
+
+//-----------------
+//img
+//-----------------
+div.imgOeuvreC{
+    position: absolute;
+    top: 0;
+    left: -170px;
+
+    @include breakpoint-min(1200){
+        left: -420px;
+    }
+    @include breakpoint-min(1600){
+        left: -480px;
+    }
+    & img{
+        width: 250px;
+
+        @include breakpoint-min(1200){
+            width: 400px;
+        }
+        @include breakpoint-min(1600){
+            width: 600px;
+        }
+    }
+}
+
+
+//-----------------
+//titre
+//-----------------
+div.titreOeuvreC{
+    position: absolute;
+    top: -20px;
+    left: 50px;
+
+    padding: 10px;
+
+    background-color: rgb(108, 100, 124);
+
+    @include breakpoint-min(1200){
+        top: 0px;
+        left: 120px;
+
+        padding: 16px;
+    }
+    @include breakpoint-min(1600){
+        top: 40px;
+        left: 120px;
+    }
+
+    & h2{
+        color: #fff;
+        font-family: "BlackMatteo";
+        font-size: 1.5em;
+        font-weight: bold;
+
+        height: 250px;
+        writing-mode: vertical-rl;
+
+        @include breakpoint-min(1200){
+            height: 380px;
+            font-size: 3em;
+        }
+        @include breakpoint-min(1600){
+
+        }
+    }
+}
+
+
+//-----------------
+//backdrop
+//-----------------
+div.backdropOeuvreC{
+    position: absolute;
+    top: 64px;
+    left: -110px;
+
+    height: 370px;
+    width: 280px;
+
+    z-index: -2;
+
+    background-color: rgb(157, 151, 168);
+
+    @include breakpoint-min(1200){
+        left: -150px;
+
+        height: 370px;
+        width: 600px;
+    }
+    @include breakpoint-min(1600){
+        height: 600px;
+        width: 600px;
+    }
+}
