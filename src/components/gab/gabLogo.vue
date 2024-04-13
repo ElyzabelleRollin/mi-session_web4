@@ -3,7 +3,7 @@
   <div class="interface">
     <main>
       <div class="logo">
-        <img src="../../assets/img/logo.svg" alt="" />
+        <img src="/assets/img/logo.svg" alt="" />
       </div>
     </main>
   </div>

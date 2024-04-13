@@ -1,3 +1,6 @@
+Lien du site en ligne:
+http://1720870.tim-cstj.ca/misessionequipe2/
+
 # iniProjet
 
 This template should help get you started developing with Vue 3 in Vite.

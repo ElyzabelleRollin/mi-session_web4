@@ -1,0 +1,1 @@
+import{_ as o,o as e,c as t,a as s}from"./index-DfU0dpT-.js";const d="/misessionequipe2/assets/img/coins.svg",c="/misessionequipe2/assets/img/logo.svg",i={},n={class:"interface"},a=s("main",null,[s("div",{class:"logo"},[s("img",{src:c,alt:""})])],-1),_=[a];function r(m,g){return e(),t("div",n,_)}const p=o(i,[["render",r]]);export{d as _,p as g};

@@ -5,11 +5,7 @@ import AffichageItems from "@/components/AffichageItemsMaelle/AffichageItems.vue
   <div class="interface-maelle">
     <main>
       <div class="titre-maelle">
-        <img
-          src="/public/assets/img/logo/logo-maelle01.svg"
-          alt="logo"
-          class="logo"
-        />
+        <img src="/assets/img/logo/logo-maelle01.svg" alt="logo" class="logo" />
         <h2>Arma Antiqua</h2>
       </div>
       <div class="accueil">

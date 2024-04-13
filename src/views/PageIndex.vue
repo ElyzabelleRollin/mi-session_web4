@@ -20,7 +20,9 @@
         </p>
       </div>
       <div class="liensIndex">
-        <li><RouterLink to="/PageAccueilCharles">Nota temporis</RouterLink></li>
+        <li>
+          <RouterLink to="/pageexpoeharles">Nota temporis</RouterLink>
+        </li>
         <p>
           Explorez la beauté mystique de l'art asiatique à travers notre
           exposition en ligne mettant en vedette des œuvres réalisées à l'encre.
@@ -73,10 +75,7 @@
       </div>
     </ul>
     <div class="deco">
-      <img
-        src="../../public/assets/img/andrew-neel-acowe0pCVBg-unsplash.jpg"
-        alt=""
-      />
+      <img src="/assets/img/andrew-neel-acowe0pCVBg-unsplash.jpg" alt="" />
     </div>
   </div>
 </template>
