@@ -2,12 +2,12 @@
 export default {
   data() {
     return {
-      isMenuOpen: false,
+      menuOuvert: false,
     };
   },
   methods: {
-    toggleMenu() {
-      this.isMenuOpen = !this.isMenuOpen;
+    ouvrirMenu() {
+      this.menuOuvert = !this.menuOuvert;
     },
   },
 };
@@ -16,7 +16,7 @@ export default {
 <template>
   <div id="menu-hamburger">
     <div class="nav-mobile">
-      <button @click="toggleMenu" class="hamburger">
+      <button @click="ouvrirMenu" class="hamburger">
         <img src="/assets/img/menuHamburger.svg" alt="" />
       </button>
       <div>
@@ -25,13 +25,13 @@ export default {
         </RouterLink>
       </div>
     </div>
-    <nav v-if="isMenuOpen" class="menu">
-      <!-- Your menu items here -->
+    <nav v-if="menuOuvert" class="menu">
       <ul>
+        <li><RouterLink to="/">Accueil</RouterLink></li>
         <li><RouterLink to="/PageAccueilEly">Floralis</RouterLink></li>
-        <li><RouterLink to="/PageAccueilCharle">Charle</RouterLink></li>
-        <li><RouterLink to="/PageAccueilMaelle">Mawelle</RouterLink></li>
+        <li><RouterLink to="/pageexpoeharles">Nota temporis</RouterLink></li>
         <li><RouterLink to="/PageAccueilGab">Agapè</RouterLink></li>
+        <li><RouterLink to="/PageAccueilMaelle">Arma antiqua</RouterLink></li>
       </ul>
     </nav>
   </div>

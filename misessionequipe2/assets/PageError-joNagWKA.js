@@ -1,1 +1,0 @@
-import{_ as o,c as a,a as e,b as c,w as n,r as s,o as r,d as l}from"./index-DfU0dpT-.js";const _={},i={class:"interface"},d=e("h1",null,"Heille, t'es pas à bonne place!!!! ",-1);function u(f,p){const t=s("RouterLink");return r(),a("div",i,[e("main",null,[d,c(t,{to:"/"},{default:n(()=>[l("Retour à l'accueil")]),_:1})])])}const h=o(_,[["render",u]]);export{h as default};
