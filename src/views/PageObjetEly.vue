@@ -25,7 +25,7 @@ onBeforeMount(() => {
   <div class="conteneur-details">
     <div class="conteneur-titre">
       <h1>{{ data.oeuvres.title }}</h1>
-      <div class="image">
+      <div class="image-details">
         <img :src="data.oeuvres.primaryimageurl" :alt="data.oeuvres.title" />
       </div>
     </div>

@@ -2,16 +2,34 @@
 //Gabrielle Elemond-Beaudin
 // 🥐 0566134 🥐
 //----------------------------------------------------
+//Élyzabelle Rollin
+//1720870
+//----------------------------------------------------
+//Maëlle Dion
+//2258197
+//----------------------------------------------------
 
+//---------------------------------
+//Importations Générales
+//---------------------------------
+@import "footer/footer";
+@import "header/header";
+
+//---------------------------------
+//Importations Gabrielle
+//---------------------------------
 @import "mainGab/mainGab";
 @import "index/index";
 @import "images/images";
 @import "logoGab/logoGab";
 @import "detailGab/detailGab";
 
-@import "footer/footer";
-@import "header/header";
+//---------------------------------
+//Importations Élyzabelle
+//---------------------------------
+@import "ER/er.scss";
 
-// @import "ER/er.scss";
-
+//---------------------------------
+//Importations Mawelle
+//---------------------------------
 @import "affichageAccueilMaelle/affichage-accueil-maelle";

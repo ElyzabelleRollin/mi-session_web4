@@ -4,7 +4,9 @@
     <div class="menu">
       <div class="flex">
         <div>
-          <img src="/assets/img/Logo_musee.svg" alt="" />
+          <RouterLink to="/">
+            <img src="/assets/img/Logo_musee.svg" alt="" />
+          </RouterLink>
         </div>
         <div class="conteneur-liens">
           <li><RouterLink to="/PageAccueilEly">Floralis</RouterLink></li>
