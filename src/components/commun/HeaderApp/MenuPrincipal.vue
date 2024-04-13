@@ -11,7 +11,7 @@
         <div class="conteneur-liens">
           <li><RouterLink to="/PageAccueilEly">Floralis</RouterLink></li>
           <li>
-            <RouterLink to="/PageAccueilCharles">Nota temporis</RouterLink>
+            <RouterLink to="/pageexpoeharles">Nota temporis</RouterLink>
           </li>
           <li>
             <RouterLink to="/PageAccueilMaelle">Arma antiqua</RouterLink>

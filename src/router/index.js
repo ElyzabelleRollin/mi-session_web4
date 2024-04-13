@@ -34,11 +34,6 @@ const router = createRouter({
       component: () => import("@/views/PageAccueilMaelle.vue"),
     },
     {
-      path: "/pageobjetcharles",
-      name: "pageobjetcharles",
-      component: () => import("@/views/PageObjetCharles.vue"),
-    },
-    {
       path: "/pageobjetely/:id",
       name: "pageobjetely",
       component: () => import("@/views/PageObjetEly.vue"),
