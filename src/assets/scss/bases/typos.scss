@@ -12,7 +12,7 @@
 }
 @font-face {
   font-family: "Montserrat";
-  src: url("assets/fonts/Montserrat-Light.ttf");
+  src: url("/assets/fonts/Montserrat-Light.ttf");
 }
 
 //-------------------------------------------
@@ -20,7 +20,7 @@
 //-------------------------------------------
 @font-face {
   font-family: "Chopin-Light";
-  src: url("../../../../../public/assets/font/Chopin-Light.ttf");
+  src: url("/assets/fonts/Chopin-Light.ttf");
 }
 
 //-------------------------------------------
@@ -28,7 +28,7 @@
 //-------------------------------------------
 @font-face {
   font-family: "Handmade";
-  src: url(../../../../public/assets/fonts/Handmade.otf) format("truetype");
+  src: url(/assets/fonts/Handmade.otf);
 }
 //-------------------------------------------
 //Fonts pour les pages de Charles
@@ -39,10 +39,10 @@
 //-----------------------------------------------
 @font-face {
   font-family: "Bonita";
-  src: url("../assets/fonts/BONITA.TTF") format("truetype");
+  src: url("/assets/fonts/BONITA.TTF");
 }
 
 @font-face {
   font-family: "Ashfiana";
-  src: url("../assets/fonts/ASHFIANA-REGULAR.TTF") format("truetype");
+  src: url("/assets/fonts/ASHFIANA-REGULAR.TTF");
 }
