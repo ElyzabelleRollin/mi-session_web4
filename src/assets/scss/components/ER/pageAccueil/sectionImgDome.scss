@@ -8,22 +8,24 @@
 //--------------------------------------------
 .conteneur-D {
   @include marginSectionMobile;
-  @include breakpoint-min(768) {
-    @include marginSectionTablette;
-  }
-  @include breakpoint-min(992) {
-    @include marginSectionDesktop;
-  }
-
   @include breakpoint-min(576) {
     max-width: 70%;
     margin-left: auto;
     margin-right: auto;
   }
+  //---------------------------------
+  //Breakpoint tablette
+  //---------------------------------
   @include breakpoint-min(768) {
+    @include marginSectionTablette;
     max-width: 60%;
   }
+
+  //---------------------------------
+  //Breakpoint desktop
+  //---------------------------------
   @include breakpoint-min(992) {
+    @include marginSectionDesktop;
     max-width: 550px;
   }
 
@@ -32,7 +34,6 @@
   //--------------------------------------------
   .conteneur-image {
     @extend .col-8;
-
     margin: 0 auto;
     overflow: hidden;
     border-radius: 200px 200px 0 0;
@@ -46,6 +47,9 @@
       min-height: 400px;
     }
 
+    //--------------------------------------------
+    //Style déplacement de l'image
+    //--------------------------------------------
     & .deplacement {
       position: relative;
       bottom: 5px;

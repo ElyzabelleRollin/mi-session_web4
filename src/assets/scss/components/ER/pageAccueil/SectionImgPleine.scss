@@ -8,9 +8,15 @@
 //--------------------------------------------
 .conteneur-section-pleine {
   @include marginSectionMobile;
+  //--------------------------------------------
+  //Breakpoint tablette
+  //--------------------------------------------
   @include breakpoint-min(768) {
     @include marginSectionTablette;
   }
+  //--------------------------------------------
+  //Breakpoint desktop
+  //--------------------------------------------
   @include breakpoint-min(992) {
     @include marginSectionDesktop;
   }
@@ -47,7 +53,6 @@
     //--------------------------------------------
     @include breakpoint-min(1025) {
       height: 100%;
-      //   width: 100%;
     }
   }
   //--------------------------------------------

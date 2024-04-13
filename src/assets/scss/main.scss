@@ -1,19 +1,12 @@
-@import '../../../node_modules/bootstrap/scss/bootstrap.scss';
-@import '../scss/bases/bases.scss';
-@import 'components/components';
-@import '../scss/pages/page.scss';
+//Style du main
+//------------------------------
+//Élyzabelle Rollin
+//1720870
 
-
-.interface
-{
-    & p{
-        font-family: 'Montserrat';
-        font-weight: 500;
-    }
-
-    // & h3{
-    //     // font-family: 'BlackMatteo';
-    //     // font-size: 3em;
-    // }
-    // margin: 20px;
-}
+//--------------------------------
+//Importations
+//--------------------------------
+@import "../../../node_modules/bootstrap/scss/bootstrap.scss";
+@import "../scss/bases/bases.scss";
+@import "components/components";
+@import "../scss/pages/page.scss";

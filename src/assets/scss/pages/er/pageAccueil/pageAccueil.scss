@@ -1,13 +1,52 @@
+//Style général de la page d'accueil
+//-------------------------------
+//Élyzabelle Rollin
+//1720870
+
+//-----------------------------------
+//Style de la page d'accueil
+//-----------------------------------
 .pageEly {
   max-width: 1500px;
   margin: 0 auto;
   background-color: #fffef9;
 
-  .conteneur-image {
+  //---------------------------------
+  //Style du conteneur de l'image des oeuvres
+  //---------------------------------
+  & .conteneur-image {
     transition: scale 0.5s;
+
+    //---------------------------------
+    //Style de l'image en hover
+    //---------------------------------
+    &:hover {
+      scale: 1.1;
+    }
   }
-  .conteneur-image:hover {
-    scale: 1.1;
-    cursor: url("/assets/img/Asset 2.svg"), auto;
+  //---------------------------------
+  //Style du curseur
+  //---------------------------------
+  & a {
+    cursor: url("/assets/img/curseur.svg"), auto;
+  }
+
+  //---------------------------------
+  //Style des titres
+  //---------------------------------
+  & h1,
+  & h2,
+  & h3,
+  & h4,
+  & h5 {
+    font-family: "Bonita";
+    font-weight: 900;
+  }
+  //-----------------------------------
+  //Style des paragraphes
+  //-----------------------------------
+  & p {
+    font-family: "Ashfiana";
+    color: $bleu;
   }
 }

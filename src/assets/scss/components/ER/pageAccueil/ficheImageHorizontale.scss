@@ -9,9 +9,15 @@
 .conteneur-H {
   @extend .col-12;
   @include marginSectionMobile;
+  //--------------------------------------------
+  //Breakpoint tablette
+  //--------------------------------------------
   @include breakpoint-min(768) {
     @include marginSectionTablette;
   }
+  //--------------------------------------------
+  //Breakpoint desktop
+  //--------------------------------------------
   @include breakpoint-min(992) {
     @include marginSectionDesktop;
   }
