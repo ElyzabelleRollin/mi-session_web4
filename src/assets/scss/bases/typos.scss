@@ -62,6 +62,27 @@
   src: url("../../../../../public/assets/font/Montserrat-Light.ttf");
 }
 @font-face {
+  font-family: "Montserrat";
+  src: url("../assets/fonts/Montserrat-Light.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "BlackMatteo";
+  src: url("../assets/fonts/Black Matteo.woff") format("woff");
+}
+//-----------------------------------------------
+//Fonts pour page Élyzabelle Rollin
+//-----------------------------------------------
+@font-face {
+  font-family: "Bonita";
+  src: url("../assets/fonts/BONITA.TTF") format("truetype");
+}
+
+@font-face {
+  font-family: "Ashfiana";
+  src: url("../assets/fonts/ASHFIANA-REGULAR.TTF") format("truetype");
+}
+
   font-family: "Black Matteo";
   src: url("../../../../../public/assets/font/Black Matteo.ttf");
   @font-face {

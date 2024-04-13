@@ -34,7 +34,7 @@ const router = createRouter({
       component: () => import("@/views/PageObjetCharles.vue"),
     },
     {
-      path: "/pageobjetely",
+      path: "/pageobjetely/:id",
       name: "pageobjetely",
       component: () => import("@/views/PageObjetEly.vue"),
     },
@@ -48,7 +48,21 @@ const router = createRouter({
       name: "pageobjetmaelle",
       component: () => import("@/views/PageObjetMaelle.vue"),
     },
+    {
+      path: '/:pathMatch(.*)*',
+      redirect: '/404'
+    }, 
+    {
+      path: '/404',
+      name: 'Page404',
+      component: () => import("@/views/PageError.vue"),
+    }
   ],
+});
+
+router.beforeEach((to, from, next) =>{
+  window.scrollTo({top: 0}); 
+  next(); 
 });
 
 export default router;

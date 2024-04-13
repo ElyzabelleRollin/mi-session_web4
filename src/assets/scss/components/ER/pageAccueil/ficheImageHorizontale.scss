@@ -1,0 +1,201 @@
+//Style générale de la section 2
+//-------------------------------------------
+//Élyzabelle Rollin
+//1720870
+
+//--------------------------------------------
+//Style de la section
+//--------------------------------------------
+.conteneur-H {
+  @extend .col-12;
+  @include marginSectionMobile;
+  //--------------------------------------------
+  //Breakpoint tablette
+  //--------------------------------------------
+  @include breakpoint-min(768) {
+    @include marginSectionTablette;
+  }
+  //--------------------------------------------
+  //Breakpoint desktop
+  //--------------------------------------------
+  @include breakpoint-min(992) {
+    @include marginSectionDesktop;
+  }
+
+  //--------------------------------------------
+  //Breakpoint tablette
+  //--------------------------------------------
+  @include breakpoint-min(768) {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  //--------------------------------------------
+  //Breakpoint desktop
+  //--------------------------------------------
+  @include breakpoint-min(992) {
+    margin-bottom: 400px;
+  }
+
+  //--------------------------------------------
+  //Style du sous-conteneur
+  //--------------------------------------------
+  & > .fiche {
+    &:first-child,
+    &:nth-child(2) {
+      @include marginSousElementMobile;
+    }
+
+    //--------------------------------------------
+    //Breakpoint tablette
+    //--------------------------------------------
+    @include breakpoint-min(768) {
+      @extend .col-md-5;
+      padding-top: 50px;
+    }
+
+    //--------------------------------------------
+    //Breakpoint desktop
+    //--------------------------------------------
+    @include breakpoint-min(992) {
+      @extend .col-lg-4;
+      padding-top: 0;
+    }
+
+    //--------------------------------------------
+    //Style du conteneur de l'image
+    //--------------------------------------------
+    & .conteneur-image {
+      //--------------------------------------------
+      //Style des images
+      //--------------------------------------------
+      & > img {
+        display: block;
+        @extend .col-10;
+        height: 200px;
+        border-radius: 0 200px 200px 0px;
+
+        //--------------------------------------------
+        //Breakpoint mobile
+        //--------------------------------------------
+        @include breakpoint-min(576) {
+          @extend .col-sm-10;
+          height: 250px;
+        }
+
+        //--------------------------------------------
+        //Breakpoint tablette
+        //--------------------------------------------
+        @include breakpoint-min(768) {
+          border-radius: 200px 200px 0 0;
+          height: 500px;
+          margin: 0 auto;
+          max-width: 426px;
+        }
+        //--------------------------------------------
+        //Breakpoint desktop
+        //--------------------------------------------
+        @include breakpoint-min(1400) {
+          height: 600px;
+        }
+      }
+
+      //--------------------------------------------
+      //Style de l'image tournée à droite
+      //--------------------------------------------
+      .img-droite {
+        border-radius: 200px 0 0 200px;
+        //--------------------------------------------
+        //Breakpoint tablette
+        //--------------------------------------------
+        @include breakpoint-min(768) {
+          border-radius: 200px 200px 0 0;
+          height: 500px;
+        }
+        //--------------------------------------------
+        //Breakpoint desktop
+        //--------------------------------------------
+        @include breakpoint-min(1400) {
+          height: 600px;
+        }
+      }
+    }
+
+    //--------------------------------------------
+    // Style du conteneur de l'image tournée à droite
+    //--------------------------------------------
+    & .conteneur-droite {
+      @include setFlex(flex-end, flex-end, center);
+
+      //--------------------------------------------
+      //Breakpoint tablette
+      //--------------------------------------------
+      @include breakpoint-min(768) {
+        display: block;
+      }
+    }
+
+    //--------------------------------------------
+    //Style du texte
+    //--------------------------------------------
+    & .texte {
+      @include marginMobile;
+      @include marginTopTexte;
+      //--------------------------------------------
+      //Breakpoint tablette
+      //--------------------------------------------
+      @include breakpoint-min(768) {
+        margin-left: 0;
+        text-align: center;
+      }
+    }
+
+    //--------------------------------------------
+    //Style du texte de l'image à droite
+    //--------------------------------------------
+    & .texte-droite {
+      margin-left: 15vw;
+      //--------------------------------------------
+      //Breakpoint mobile
+      //--------------------------------------------
+      @include breakpoint-min(576) {
+        margin-left: 17vw;
+
+        //--------------------------------------------
+        //Breakpoint tablette
+        //--------------------------------------------
+        @include breakpoint-min(768) {
+          margin-left: 0;
+        }
+      }
+    }
+  }
+
+  //--------------------------------------------
+  //Style de la première fiche
+  //--------------------------------------------
+  .fiche-haut {
+    //--------------------------------------------
+    //Breakpoint tablette
+    //--------------------------------------------
+    @include breakpoint-min(768) {
+      margin-left: 100%;
+      margin-right: 100%;
+    }
+  }
+
+  //--------------------------------------------
+  //Style des premières et dernieres fiches
+  //--------------------------------------------
+  .fiche-haut,
+  .fiche-bas {
+    //--------------------------------------------
+    //Breakpoint desktop
+    //--------------------------------------------
+    @include breakpoint-min(992) {
+      margin: 0;
+      position: relative;
+      top: 200px;
+    }
+  }
+}
